@@ -1,0 +1,17 @@
+{
+  "trailing_levels": {"1": 2, "2": 4, "3": 6, "5": 8},
+  "ma_periods": [50, 100, 200],
+  "ma100_escalates_by_levels": 1,
+  "swing_low_lookback_days": 60,
+  "down_streak_min_days": 3,
+  "confluence_required_for_level_3": 2,
+  "confluence_required_for_level_5": 3,
+  "breadth": {
+    "daily_drop_threshold_pct": 4,
+    "min_count": 3,
+    "floor_level_without_gold_confirmation": 4,
+    "floor_level_with_gold_confirmation": 5,
+    "gold_confirmation_threshold_pct": 3
+  },
+  "notify_only_on_level_increase": true
+}
