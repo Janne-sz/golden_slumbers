@@ -8,84 +8,84 @@
       "previous_base_severity": 3
     },
     "AEM": {
-      "last_checked_at": "2026-08-25T16:03:30Z",
+      "last_checked_at": "2026-08-25T16:58:55Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 3
     },
     "AGI": {
-      "last_checked_at": "2026-08-25T16:03:30Z",
+      "last_checked_at": "2026-08-25T16:58:55Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 3
     },
     "AU": {
-      "last_checked_at": "2026-08-25T16:03:29Z",
+      "last_checked_at": "2026-08-25T16:58:53Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
-      "previous_base_severity": 0
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
+      "previous_base_severity": 1
     },
     "EDV.L": {
-      "last_checked_at": "2026-08-25T16:03:30Z",
+      "last_checked_at": "2026-08-25T16:58:56Z",
       "last_daily_timestamp": "2026-08-25",
       "last_intraday_timestamp": "2026-08-25T15:00:00Z",
       "previous_base_severity": 3
     },
     "FNV": {
-      "last_checked_at": "2026-08-25T16:03:29Z",
+      "last_checked_at": "2026-08-25T16:58:54Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 1
     },
     "GC=F": {
-      "last_checked_at": "2026-08-25T16:03:31Z",
+      "last_checked_at": "2026-08-25T16:58:57Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:00:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:00:00Z",
       "previous_base_severity": 3
     },
     "GFI": {
-      "last_checked_at": "2026-08-25T16:03:31Z",
+      "last_checked_at": "2026-08-25T16:58:57Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 3
     },
     "GOLD": {
-      "last_checked_at": "2026-08-25T16:03:28Z",
+      "last_checked_at": "2026-08-25T16:58:53Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 3
     },
     "KGC": {
-      "last_checked_at": "2026-08-25T16:03:29Z",
+      "last_checked_at": "2026-08-25T16:58:55Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 3
     },
     "NEM": {
-      "last_checked_at": "2026-08-25T16:03:28Z",
+      "last_checked_at": "2026-08-25T16:58:53Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 0
     },
     "NST.AX": {
-      "last_checked_at": "2026-08-25T16:03:31Z",
+      "last_checked_at": "2026-08-25T16:58:56Z",
       "last_daily_timestamp": "2026-08-24",
       "last_intraday_timestamp": "2026-08-25T06:00:00Z",
       "previous_base_severity": 3
     },
     "PAAS": {
-      "last_checked_at": "2026-08-25T16:03:31Z",
+      "last_checked_at": "2026-08-25T16:58:57Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 3
     },
     "WPM": {
-      "last_checked_at": "2026-08-25T16:03:29Z",
+      "last_checked_at": "2026-08-25T16:58:54Z",
       "last_daily_timestamp": "2026-08-25",
-      "last_intraday_timestamp": "2026-08-25T15:30:00Z",
+      "last_intraday_timestamp": "2026-08-25T16:30:00Z",
       "previous_base_severity": 0
     }
   },
-  "last_run_at": "2026-08-25T16:03:32Z",
+  "last_run_at": "2026-08-25T16:58:58Z",
   "schema_version": 1
 }
