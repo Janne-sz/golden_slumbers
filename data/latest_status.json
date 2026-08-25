@@ -9,69 +9,69 @@
   "fetch": {
     "errors": [
       {
-        "message": "yfinance request failed for GOLD (1h): unconverted data remains: T09:02:53+00:00",
+        "message": "yfinance request failed for GOLD (1h): unconverted data remains: T09:54:10+00:00",
         "ticker": "GOLD"
       },
       {
-        "message": "yfinance request failed for NEM (1h): unconverted data remains: T09:02:54+00:00",
+        "message": "yfinance request failed for NEM (1h): unconverted data remains: T09:54:10+00:00",
         "ticker": "NEM"
       },
       {
-        "message": "yfinance request failed for AU (1h): unconverted data remains: T09:02:54+00:00",
+        "message": "yfinance request failed for AU (1h): unconverted data remains: T09:54:11+00:00",
         "ticker": "AU"
       },
       {
-        "message": "yfinance request failed for WPM (1h): unconverted data remains: T09:02:55+00:00",
+        "message": "yfinance request failed for WPM (1h): unconverted data remains: T09:54:11+00:00",
         "ticker": "WPM"
       },
       {
-        "message": "yfinance request failed for FNV (1h): unconverted data remains: T09:02:55+00:00",
+        "message": "yfinance request failed for FNV (1h): unconverted data remains: T09:54:12+00:00",
         "ticker": "FNV"
       },
       {
-        "message": "yfinance request failed for KGC (1h): unconverted data remains: T09:02:55+00:00",
+        "message": "yfinance request failed for KGC (1h): unconverted data remains: T09:54:12+00:00",
         "ticker": "KGC"
       },
       {
-        "message": "yfinance request failed for AEM (1h): unconverted data remains: T09:02:55+00:00",
+        "message": "yfinance request failed for AEM (1h): unconverted data remains: T09:54:12+00:00",
         "ticker": "AEM"
       },
       {
-        "message": "yfinance request failed for AGI (1h): unconverted data remains: T09:02:56+00:00",
+        "message": "yfinance request failed for AGI (1h): unconverted data remains: T09:54:13+00:00",
         "ticker": "AGI"
       },
       {
-        "message": "yfinance request failed for EDV.L (1h): unconverted data remains: T09:02:56+00:00",
+        "message": "yfinance request failed for EDV.L (1h): unconverted data remains: T09:54:13+00:00",
         "ticker": "EDV.L"
       },
       {
-        "message": "yfinance request failed for NST.AX (1h): unconverted data remains: T09:02:56+00:00",
+        "message": "yfinance request failed for NST.AX (1h): unconverted data remains: T09:54:13+00:00",
         "ticker": "NST.AX"
       },
       {
-        "message": "yfinance request failed for GFI (1h): unconverted data remains: T09:02:57+00:00",
+        "message": "yfinance request failed for GFI (1h): unconverted data remains: T09:54:14+00:00",
         "ticker": "GFI"
       },
       {
-        "message": "yfinance request failed for PAAS (1h): unconverted data remains: T09:02:57+00:00",
+        "message": "yfinance request failed for PAAS (1h): unconverted data remains: T09:54:14+00:00",
         "ticker": "PAAS"
       },
       {
-        "message": "yfinance request failed for GC=F (1h): unconverted data remains: T09:02:57+00:00",
+        "message": "yfinance request failed for GC=F (1h): unconverted data remains: T09:54:15+00:00",
         "ticker": "GC=F"
       },
       {
-        "message": "yfinance request failed for 0P00000B0I (1h): unconverted data remains: T09:02:58+00:00",
+        "message": "yfinance request failed for 0P00000B0I (1h): unconverted data remains: T09:54:15+00:00",
         "ticker": "0P00000B0I"
       },
       {
-        "message": "yfinance request failed for 0P0001KRE8 (1h): unconverted data remains: T09:02:58+00:00",
+        "message": "yfinance request failed for 0P0001KRE8 (1h): unconverted data remains: T09:54:15+00:00",
         "ticker": "0P0001KRE8"
       }
     ],
     "updated": []
   },
-  "generated_at": "2026-08-25T09:02:58Z",
+  "generated_at": "2026-08-25T09:54:15Z",
   "instruments": [
     {
       "base_severity": 0,
