@@ -80,12 +80,12 @@
       },
       {
         "daily_rows": 753,
-        "intraday_rows": 506,
+        "intraday_rows": 507,
         "ticker": "GC=F"
       }
     ]
   },
-  "generated_at": "2026-08-25T19:48:42Z",
+  "generated_at": "2026-08-25T20:49:29Z",
   "instruments": [
     {
       "base_severity": 0,
@@ -97,25 +97,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 1.135,
+        "daily_change_pct": 2.314,
         "data_is_stale": false,
         "down_streak_days": 1,
         "history_days": 751,
-        "hourly_change_pct": -0.183,
+        "hourly_change_pct": 0.981,
         "hourly_move_highlight": false,
-        "last_price": 46.32,
+        "last_price": 46.86,
         "moving_averages": {
-          "100": 42.5943,
-          "200": 41.8889,
-          "50": 42.118
+          "100": 42.5996,
+          "200": 41.8915,
+          "50": 42.1286
         },
         "new_swing_low": false,
         "previous_close": 45.8,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 46.32
+        "trailing_peak_price": 46.86
       },
       "kind": "watchlist",
       "name": "Barrick Mining Corp",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "GOLD"
@@ -130,25 +131,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 2.344,
+        "daily_change_pct": 2.499,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 751,
-        "hourly_change_pct": -0.011,
+        "hourly_change_pct": 0.141,
         "hourly_move_highlight": false,
-        "last_price": 134.93,
+        "last_price": 135.135,
         "moving_averages": {
-          "100": 106.7911,
-          "200": 106.6134,
-          "50": 102.917
+          "100": 106.7932,
+          "200": 106.6144,
+          "50": 102.9212
         },
         "new_swing_low": false,
         "previous_close": 131.84,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 134.93
+        "trailing_peak_price": 135.135
       },
       "kind": "watchlist",
       "name": "Newmont Corporation",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "NEM"
@@ -163,25 +165,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 1.818,
+        "daily_change_pct": 2.357,
         "data_is_stale": false,
         "down_streak_days": 1,
         "history_days": 751,
-        "hourly_change_pct": -0.329,
+        "hourly_change_pct": 0.199,
         "hourly_move_highlight": false,
-        "last_price": 122.66,
+        "last_price": 123.31,
         "moving_averages": {
-          "100": 91.4656,
-          "200": 91.6817,
-          "50": 87.5905
+          "100": 91.4729,
+          "200": 91.6853,
+          "50": 87.6051
         },
         "new_swing_low": false,
         "previous_close": 120.47,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 122.66
+        "trailing_peak_price": 123.31
       },
       "kind": "watchlist",
       "name": "AngloGold Ashanti PLC",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "AU"
@@ -196,25 +199,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 2.041,
+        "daily_change_pct": 2.197,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 751,
-        "hourly_change_pct": 0.037,
+        "hourly_change_pct": 0.19,
         "hourly_move_highlight": false,
-        "last_price": 163.46,
+        "last_price": 163.71,
         "moving_averages": {
-          "100": 126.4856,
-          "200": 126.9634,
-          "50": 120.7288
+          "100": 126.4882,
+          "200": 126.9647,
+          "50": 120.734
         },
         "new_swing_low": false,
         "previous_close": 160.19,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 163.46
+        "trailing_peak_price": 163.71
       },
       "kind": "watchlist",
       "name": "Wheaton Precious Metals Corp",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "WPM"
@@ -229,25 +233,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 0.339,
+        "daily_change_pct": 0.515,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 751,
-        "hourly_change_pct": -0.496,
+        "hourly_change_pct": -0.321,
         "hourly_move_highlight": false,
-        "last_price": 271.045,
+        "last_price": 271.52,
         "moving_averages": {
-          "100": 228.6752,
-          "200": 229.394,
-          "50": 221.5919
+          "100": 228.6825,
+          "200": 229.3976,
+          "50": 221.6064
         },
         "new_swing_low": false,
         "previous_close": 270.13,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 271.045
+        "trailing_peak_price": 271.52
       },
       "kind": "watchlist",
       "name": "Franco-Nevada Corp",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "FNV"
@@ -262,25 +267,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 0.985,
+        "daily_change_pct": 1.455,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 751,
-        "hourly_change_pct": -0.24,
+        "hourly_change_pct": 0.225,
         "hourly_move_highlight": false,
-        "last_price": 33.305,
+        "last_price": 33.46,
         "moving_averages": {
-          "100": 27.8261,
-          "200": 29.1367,
-          "50": 25.5144
+          "100": 27.8278,
+          "200": 29.1376,
+          "50": 25.5179
         },
         "new_swing_low": false,
         "previous_close": 32.98,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 33.305
+        "trailing_peak_price": 33.46
       },
       "kind": "watchlist",
       "name": "Kinross Gold Corp",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "KGC"
@@ -295,25 +301,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 2.627,
+        "daily_change_pct": 2.823,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 751,
-        "hourly_change_pct": -0.163,
+        "hourly_change_pct": 0.027,
         "hourly_move_highlight": false,
-        "last_price": 223.615,
+        "last_price": 224.04,
         "moving_averages": {
-          "100": 176.3711,
-          "200": 184.4912,
-          "50": 163.4297
+          "100": 176.376,
+          "200": 184.4937,
+          "50": 163.4396
         },
         "new_swing_low": false,
         "previous_close": 217.89,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 223.615
+        "trailing_peak_price": 224.04
       },
       "kind": "watchlist",
       "name": "Agnico Eagle Mines Ltd",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "AEM"
@@ -328,25 +335,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 1.631,
+        "daily_change_pct": 1.853,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 751,
-        "hourly_change_pct": -0.282,
+        "hourly_change_pct": -0.064,
         "hourly_move_highlight": false,
-        "last_price": 38.945,
+        "last_price": 39.03,
         "moving_averages": {
-          "100": 36.8334,
-          "200": 38.9029,
-          "50": 31.7373
+          "100": 36.8341,
+          "200": 38.9033,
+          "50": 31.7388
         },
         "new_swing_low": false,
         "previous_close": 38.32,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 38.945
+        "trailing_peak_price": 39.03
       },
       "kind": "watchlist",
       "name": "Alamos Gold Inc",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "AGI"
@@ -380,6 +388,7 @@
       },
       "kind": "watchlist",
       "name": "Endeavour Mining PLC",
+      "price_unit": "GBp",
       "reasons": [],
       "severity": 0,
       "ticker": "EDV.L"
@@ -413,6 +422,7 @@
       },
       "kind": "watchlist",
       "name": "Northern Star Resources Ltd",
+      "price_unit": "AUD",
       "reasons": [],
       "severity": 0,
       "ticker": "NST.AX"
@@ -427,25 +437,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 2.884,
+        "daily_change_pct": 3.233,
         "data_is_stale": false,
         "down_streak_days": 1,
         "history_days": 751,
-        "hourly_change_pct": -0.551,
+        "hourly_change_pct": -0.214,
         "hourly_move_highlight": false,
-        "last_price": 48.695,
+        "last_price": 48.86,
         "moving_averages": {
-          "100": 39.6246,
-          "200": 42.8744,
-          "50": 36.3857
+          "100": 39.6263,
+          "200": 42.8753,
+          "50": 36.3892
         },
         "new_swing_low": false,
         "previous_close": 47.33,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 48.695
+        "trailing_peak_price": 48.86
       },
       "kind": "watchlist",
       "name": "Gold Fields ADR",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "GFI"
@@ -460,25 +471,26 @@
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 0.755,
+        "daily_change_pct": 1.063,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 751,
-        "hourly_change_pct": 0.037,
+        "hourly_change_pct": 0.343,
         "hourly_move_highlight": false,
-        "last_price": 54.035,
+        "last_price": 54.2,
         "moving_averages": {
-          "100": 50.4806,
-          "200": 51.3876,
-          "50": 46.3896
+          "100": 50.4824,
+          "200": 51.3884,
+          "50": 46.3931
         },
         "new_swing_low": false,
         "previous_close": 53.63,
         "trailing_drawdown_pct": 0.0,
-        "trailing_peak_price": 54.035
+        "trailing_peak_price": 54.2
       },
       "kind": "watchlist",
       "name": "Pan American Silver",
+      "price_unit": "USD",
       "reasons": [],
       "severity": 0,
       "ticker": "PAAS"
@@ -488,33 +500,34 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-08-25T19:00:00Z",
+        "as_of": "2026-08-25T20:00:00Z",
         "ath_date": "2026-01-28",
-        "ath_drawdown_pct": 15.622,
+        "ath_drawdown_pct": 15.573,
         "ath_price": 5589,
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 1.618,
+        "daily_change_pct": 1.676,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 753,
-        "hourly_change_pct": 0.096,
+        "hourly_change_pct": -0.102,
         "hourly_move_highlight": false,
-        "last_price": 4715.8999,
+        "last_price": 4718.6001,
         "moving_averages": {
-          "100": 4392.369,
-          "200": 4505.814,
-          "50": 4196.974
+          "100": 4392.395,
+          "200": 4505.827,
+          "50": 4197.026
         },
         "new_swing_low": false,
         "previous_close": 4640.7998,
-        "trailing_drawdown_pct": 0.002,
-        "trailing_peak_price": 4716.0
+        "trailing_drawdown_pct": 0.0,
+        "trailing_peak_price": 4718.6001
       },
       "kind": "reference",
       "name": "Gold spot (COMEX futures)",
+      "price_unit": "USD/oz",
       "reasons": [],
       "role": "gold_confirmation",
       "severity": 0,
@@ -549,6 +562,7 @@
       },
       "kind": "reference",
       "name": "BGF World Gold NAV",
+      "price_unit": "SEK",
       "reasons": [],
       "role": "fund_nav",
       "severity": 0,
@@ -583,6 +597,7 @@
       },
       "kind": "reference",
       "name": "CPR Global Gold Mines NAV",
+      "price_unit": "SEK",
       "reasons": [],
       "role": "fund_nav",
       "severity": 0,
