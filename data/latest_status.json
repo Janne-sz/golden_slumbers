@@ -1,7 +1,323 @@
 {
+  "breadth": {
+    "active": false,
+    "confirmed_by_gold": false,
+    "count": 0,
+    "declining_tickers": [],
+    "floor_level": null
+  },
+  "fetch": {
+    "errors": [
+      {
+        "message": "yfinance request failed for GOLD (1h): unconverted data remains: T07:11:54+00:00",
+        "ticker": "GOLD"
+      },
+      {
+        "message": "yfinance request failed for NEM (1h): unconverted data remains: T07:11:54+00:00",
+        "ticker": "NEM"
+      },
+      {
+        "message": "yfinance request failed for AU (1h): unconverted data remains: T07:11:55+00:00",
+        "ticker": "AU"
+      },
+      {
+        "message": "yfinance request failed for WPM (1h): unconverted data remains: T07:11:55+00:00",
+        "ticker": "WPM"
+      },
+      {
+        "message": "yfinance request failed for FNV (1h): unconverted data remains: T07:11:55+00:00",
+        "ticker": "FNV"
+      },
+      {
+        "message": "yfinance request failed for KGC (1h): unconverted data remains: T07:11:55+00:00",
+        "ticker": "KGC"
+      },
+      {
+        "message": "yfinance request failed for AEM (1h): unconverted data remains: T07:11:55+00:00",
+        "ticker": "AEM"
+      },
+      {
+        "message": "yfinance request failed for AGI (1h): unconverted data remains: T07:11:56+00:00",
+        "ticker": "AGI"
+      },
+      {
+        "message": "yfinance request failed for EDV.L (1h): unconverted data remains: T07:11:56+00:00",
+        "ticker": "EDV.L"
+      },
+      {
+        "message": "yfinance request failed for NST.AX (1h): unconverted data remains: T07:11:56+00:00",
+        "ticker": "NST.AX"
+      },
+      {
+        "message": "yfinance request failed for GFI (1h): unconverted data remains: T07:11:56+00:00",
+        "ticker": "GFI"
+      },
+      {
+        "message": "yfinance request failed for PAAS (1h): unconverted data remains: T07:11:56+00:00",
+        "ticker": "PAAS"
+      },
+      {
+        "message": "yfinance request failed for GC=F (1h): unconverted data remains: T07:11:57+00:00",
+        "ticker": "GC=F"
+      },
+      {
+        "message": "yfinance request failed for 0P00000B0I (1h): unconverted data remains: T07:11:57+00:00",
+        "ticker": "0P00000B0I"
+      },
+      {
+        "message": "yfinance request failed for 0P0001KRE8 (1h): unconverted data remains: T07:11:57+00:00",
+        "ticker": "0P0001KRE8"
+      }
+    ],
+    "updated": []
+  },
+  "generated_at": "2026-08-25T07:11:57Z",
+  "instruments": [
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Barrick Mining Corp",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "GOLD"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Newmont Corporation",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "NEM"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "AngloGold Ashanti PLC",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "AU"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Wheaton Precious Metals Corp",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "WPM"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Franco-Nevada Corp",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "FNV"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Kinross Gold Corp",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "KGC"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Agnico Eagle Mines Ltd",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "AEM"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Alamos Gold Inc",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "AGI"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Endeavour Mining PLC",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "EDV.L"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Northern Star Resources Ltd",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "NST.AX"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Gold Fields ADR",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "GFI"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": true,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "watchlist",
+      "name": "Pan American Silver",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "severity": 0,
+      "ticker": "PAAS"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": false,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "reference",
+      "name": "Gold spot (COMEX futures)",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "role": "gold_confirmation",
+      "severity": 0,
+      "ticker": "GC=F"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": false,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "reference",
+      "name": "BGF World Gold NAV",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "role": "fund_nav",
+      "severity": 0,
+      "ticker": "0P00000B0I"
+    },
+    {
+      "base_severity": 0,
+      "breadth_floor_applied": false,
+      "include_in_breadth": false,
+      "indicators": {
+        "available": false,
+        "reason": "No daily price history"
+      },
+      "kind": "reference",
+      "name": "CPR Global Gold Mines NAV",
+      "reasons": [
+        "data_unavailable"
+      ],
+      "role": "fund_nav",
+      "severity": 0,
+      "ticker": "0P0001KRE8"
+    }
+  ],
+  "notifications_sent": [],
   "schema_version": 1,
-  "generated_at": null,
-  "status": "awaiting_first_run",
-  "breadth": {"active": false, "confirmed_by_gold": false, "count": 0, "floor_level": null},
-  "instruments": []
+  "status": "degraded"
 }

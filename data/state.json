@@ -1,6 +1,52 @@
 {
-  "schema_version": 1,
-  "instruments": {},
   "breadth_active": false,
-  "last_run_at": null
+  "instruments": {
+    "0P00000B0I": {
+      "previous_base_severity": 0
+    },
+    "0P0001KRE8": {
+      "previous_base_severity": 0
+    },
+    "AEM": {
+      "previous_base_severity": 0
+    },
+    "AGI": {
+      "previous_base_severity": 0
+    },
+    "AU": {
+      "previous_base_severity": 0
+    },
+    "EDV.L": {
+      "previous_base_severity": 0
+    },
+    "FNV": {
+      "previous_base_severity": 0
+    },
+    "GC=F": {
+      "previous_base_severity": 0
+    },
+    "GFI": {
+      "previous_base_severity": 0
+    },
+    "GOLD": {
+      "previous_base_severity": 0
+    },
+    "KGC": {
+      "previous_base_severity": 0
+    },
+    "NEM": {
+      "previous_base_severity": 0
+    },
+    "NST.AX": {
+      "previous_base_severity": 0
+    },
+    "PAAS": {
+      "previous_base_severity": 0
+    },
+    "WPM": {
+      "previous_base_severity": 0
+    }
+  },
+  "last_run_at": "2026-08-25T07:11:57Z",
+  "schema_version": 1
 }
