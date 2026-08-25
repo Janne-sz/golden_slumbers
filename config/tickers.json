@@ -17,5 +17,8 @@
     {"ticker": "GC=F", "name": "Gold spot (COMEX futures)", "include_in_breadth": false, "role": "gold_confirmation"},
     {"ticker": "0P00000B0I", "name": "BGF World Gold NAV", "include_in_breadth": false, "role": "fund_nav"},
     {"ticker": "0P0001KRE8", "name": "CPR Global Gold Mines NAV", "include_in_breadth": false, "role": "fund_nav"}
+  ],
+  "ath_reference": [
+    {"ticker": "GC=F", "ath_price": 5589, "ath_date": "2026-01-28"}
   ]
 }

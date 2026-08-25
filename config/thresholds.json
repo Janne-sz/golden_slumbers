@@ -6,6 +6,9 @@
   "down_streak_min_days": 3,
   "confluence_required_for_level_3": 2,
   "confluence_required_for_level_5": 3,
+  "peak_backfill_lookback_days": 45,
+  "hourly_move_highlight_threshold_pct": 2,
+  "stale_data_threshold_minutes": 90,
   "breadth": {
     "daily_drop_threshold_pct": 4,
     "min_count": 3,
