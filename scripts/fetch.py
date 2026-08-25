@@ -46,7 +46,16 @@ def _start_for_daily(price_file: dict[str, Any]) -> str:
 
 def _start_for_intraday(price_file: dict[str, Any]) -> str:
     intraday = price_file.get("intraday", [])
-    return ((utc_now() - timedelta(days=INITIAL_INTRADAY_LOOKBACK_DAYS)) if not intraday else (pd.Timestamp(intraday[-1]["timestamp"]) - timedelta(hours=2))).isoformat()
+    # yfinance parses `start` as a date even for hourly intervals. Passing an
+    # ISO timestamp (with its `T` and timezone suffix) makes every request fail.
+    # Re-fetching the prior calendar day is deliberate: merge-by-timestamp makes
+    # this idempotent and gives Yahoo time to finalise the latest hourly bar.
+    start = (
+        utc_now() - timedelta(days=INITIAL_INTRADAY_LOOKBACK_DAYS)
+        if not intraday
+        else pd.Timestamp(intraday[-1]["timestamp"]) - timedelta(days=1)
+    )
+    return pd.Timestamp(start).date().isoformat()
 
 def _download(ticker: str, interval: str, start: str) -> list[dict[str, Any]]:
     try:
@@ -60,8 +69,13 @@ def update_instrument(instrument: dict[str, Any], state: dict[str, Any]) -> dict
     file_path = price_path(ticker)
     stored = read_json(file_path, {"ticker": ticker, "daily": [], "intraday": []})
     daily_new = _download(ticker, "1d", _start_for_daily(stored))
-    hourly_new = _download(ticker, "1h", _start_for_intraday(stored))
     stored["daily"] = _merge_rows(stored.get("daily", []), daily_new, "date")
+    # Persist useful daily data before attempting the less reliable intraday
+    # request. A transient Yahoo intraday outage must not blank the dashboard.
+    stored["updated_at"] = utc_text()
+    write_json(file_path, stored)
+
+    hourly_new = _download(ticker, "1h", _start_for_intraday(stored))
     stored["intraday"] = _merge_rows(stored.get("intraday", []), hourly_new, "timestamp")[-(24 * 45):]
     stored["updated_at"] = utc_text()
     write_json(file_path, stored)
