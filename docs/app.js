@@ -20,9 +20,9 @@ function card(row, target, gold = false) {
     : metric('Senaste timme', pct(i.hourly_change_pct), `${signedClass(i.hourly_change_pct)} ${i.hourly_move_highlight ? 'highlight' : ''}`);
   const ath = i.ath_drawdown_pct == null ? '' : metric(`Sedan ATH (${i.ath_date})`, `−${fmt.format(i.ath_drawdown_pct)}%`, 'ath');
   article.innerHTML = `
-    <div class="card-title"><span class="dot"></span><strong>${row.ticker}</strong><span class="level">${row.severity ? `Nivå ${row.severity}` : 'Data saknas'}</span></div>
+    <div class="card-title"><span class="dot"></span><strong>${row.ticker}</strong><span class="level">${i.available ? (row.severity ? `Nivå ${row.severity}` : 'Ingen varning') : 'Data saknas'}</span></div>
     <p class="name">${row.name}</p>
-    <p class="price">${i.available ? fmt.format(i.last_price) : '—'}</p>
+    <p class="price">${i.available ? `${fmt.format(i.last_price)} ${row.price_unit || ''}`.trim() : '—'}</p>
     <dl class="primary">${metric('Sedan peak', i.available ? `−${fmt.format(i.trailing_drawdown_pct)}%` : '—', 'drawdown')}</dl>
     <dl class="secondary">${metric('Sedan föregående stängning', pct(i.daily_change_pct), signedClass(i.daily_change_pct))}${hourly}${ath}</dl>
     <p class="meta">${row.breadth_floor_applied ? 'Sektorlarm påverkar nivån' : dataTime(i)}</p>`;

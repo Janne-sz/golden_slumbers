@@ -1,22 +1,22 @@
 {
   "watchlist": [
-    {"ticker": "GOLD", "name": "Barrick Mining Corp", "include_in_breadth": true},
-    {"ticker": "NEM", "name": "Newmont Corporation", "include_in_breadth": true},
-    {"ticker": "AU", "name": "AngloGold Ashanti PLC", "include_in_breadth": true},
-    {"ticker": "WPM", "name": "Wheaton Precious Metals Corp", "include_in_breadth": true},
-    {"ticker": "FNV", "name": "Franco-Nevada Corp", "include_in_breadth": true},
-    {"ticker": "KGC", "name": "Kinross Gold Corp", "include_in_breadth": true},
-    {"ticker": "AEM", "name": "Agnico Eagle Mines Ltd", "include_in_breadth": true},
-    {"ticker": "AGI", "name": "Alamos Gold Inc", "include_in_breadth": true},
-    {"ticker": "EDV.L", "name": "Endeavour Mining PLC", "include_in_breadth": true},
-    {"ticker": "NST.AX", "name": "Northern Star Resources Ltd", "include_in_breadth": true},
-    {"ticker": "GFI", "name": "Gold Fields ADR", "include_in_breadth": true},
-    {"ticker": "PAAS", "name": "Pan American Silver", "include_in_breadth": true}
+    {"ticker": "GOLD", "name": "Barrick Mining Corp", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "NEM", "name": "Newmont Corporation", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "AU", "name": "AngloGold Ashanti PLC", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "WPM", "name": "Wheaton Precious Metals Corp", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "FNV", "name": "Franco-Nevada Corp", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "KGC", "name": "Kinross Gold Corp", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "AEM", "name": "Agnico Eagle Mines Ltd", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "AGI", "name": "Alamos Gold Inc", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "EDV.L", "name": "Endeavour Mining PLC", "include_in_breadth": true, "price_unit": "GBp"},
+    {"ticker": "NST.AX", "name": "Northern Star Resources Ltd", "include_in_breadth": true, "price_unit": "AUD"},
+    {"ticker": "GFI", "name": "Gold Fields ADR", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "PAAS", "name": "Pan American Silver", "include_in_breadth": true, "price_unit": "USD"}
   ],
   "reference": [
-    {"ticker": "GC=F", "name": "Gold spot (COMEX futures)", "include_in_breadth": false, "role": "gold_confirmation"},
-    {"ticker": "0P00000B0I", "name": "BGF World Gold NAV", "include_in_breadth": false, "role": "fund_nav"},
-    {"ticker": "0P0001KRE8", "name": "CPR Global Gold Mines NAV", "include_in_breadth": false, "role": "fund_nav"}
+    {"ticker": "GC=F", "name": "Gold spot (COMEX futures)", "include_in_breadth": false, "role": "gold_confirmation", "price_unit": "USD/oz"},
+    {"ticker": "0P00000B0I", "name": "BGF World Gold NAV", "include_in_breadth": false, "role": "fund_nav", "price_unit": "SEK"},
+    {"ticker": "0P0001KRE8", "name": "CPR Global Gold Mines NAV", "include_in_breadth": false, "role": "fund_nav", "price_unit": "SEK"}
   ],
   "ath_reference": [
     {"ticker": "GC=F", "ath_price": 5589, "ath_date": "2026-01-28"}
