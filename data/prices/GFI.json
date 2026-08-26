@@ -7243,6 +7243,11 @@
       "volume": 640300
     }
   ],
+  "quote": {
+    "as_of_date": "2026-08-25",
+    "previous_close": 47.33,
+    "previous_close_date": "2026-08-24"
+  },
   "ticker": "GFI",
-  "updated_at": "2026-08-26T11:48:29Z"
+  "updated_at": "2026-08-26T13:17:32Z"
 }

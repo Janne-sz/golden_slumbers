@@ -6065,12 +6065,12 @@
       "volume": 511267
     },
     {
-      "close": 4853.0,
+      "close": 4837.0,
       "date": "2026-08-26",
-      "high": 4864.0,
+      "high": 4878.88916015625,
       "low": 4723.0,
       "open": 4797.0,
-      "volume": 101517
+      "volume": 131048
     }
   ],
   "intraday": [
@@ -7691,14 +7691,35 @@
       "volume": 96427
     },
     {
-      "close": 4853.0,
-      "high": 4854.0,
+      "close": 4857.0,
+      "high": 4858.0,
       "low": 4836.0,
       "open": 4837.0,
       "timestamp": "2026-08-26T11:00:00Z",
-      "volume": 5227
+      "volume": 9167
+    },
+    {
+      "close": 4841.0,
+      "high": 4878.88916015625,
+      "low": 4839.0,
+      "open": 4859.0,
+      "timestamp": "2026-08-26T12:00:00Z",
+      "volume": 129407
+    },
+    {
+      "close": 4837.0,
+      "high": 4842.0,
+      "low": 4836.0,
+      "open": 4840.0,
+      "timestamp": "2026-08-26T13:00:00Z",
+      "volume": 416
     }
   ],
+  "quote": {
+    "as_of_date": "2026-08-26",
+    "previous_close": 4793.0,
+    "previous_close_date": "2026-08-25"
+  },
   "ticker": "EDV.L",
-  "updated_at": "2026-08-26T11:48:28Z"
+  "updated_at": "2026-08-26T13:17:31Z"
 }

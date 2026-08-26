@@ -7243,6 +7243,11 @@
       "volume": 479093
     }
   ],
+  "quote": {
+    "as_of_date": "2026-08-25",
+    "previous_close": 160.19,
+    "previous_close_date": "2026-08-24"
+  },
   "ticker": "WPM",
-  "updated_at": "2026-08-26T11:48:27Z"
+  "updated_at": "2026-08-26T13:17:29Z"
 }

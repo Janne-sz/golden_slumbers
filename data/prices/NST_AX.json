@@ -7371,6 +7371,11 @@
       "volume": 2488365
     }
   ],
+  "quote": {
+    "as_of_date": "2026-08-26",
+    "previous_close": 24.54,
+    "previous_close_date": "2026-08-25"
+  },
   "ticker": "NST.AX",
-  "updated_at": "2026-08-26T11:48:28Z"
+  "updated_at": "2026-08-26T13:17:31Z"
 }
