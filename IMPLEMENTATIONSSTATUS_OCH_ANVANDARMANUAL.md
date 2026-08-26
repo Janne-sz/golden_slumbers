@@ -21,8 +21,9 @@ Varje schemalagd körning hämtar Yahoo Finance-data, uppdaterar den lokala hist
 
 ### Bevakade data
 
-- **Guldgruveaktier:** GOLD, NEM, AU, WPM, FNV, KGC, AEM, AGI, EDV.L, NST.AX, GFI och PAAS.
+- **Guldgruveaktier och ETF:er:** GOLD, NEM, AU, WPM, FNV, KGC, AEM, AGI, EDV.L, NST.AX, GFI, PAAS, GDX och SPGP.L. ETF:erna visas och kan larma individuellt, men räknas inte in i breadth-larmet.
 - **Guldreferens:** `GC=F`, COMEX-guldterminen från Yahoo Finance. Detta är en futuresreferens, inte ett rent spotpris.
+- **Fysisk guldreferens:** IGLN.L (iShares Physical Gold ETC) visas under övriga referenser.
 - **Fond-NAV:** BGF World Gold och CPR Global Gold Mines visas som referenser när Yahoo Finance-data finns, men används inte i breadth-larmet.
 
 ## Använd PWA:n

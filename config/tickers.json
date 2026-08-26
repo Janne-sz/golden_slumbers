@@ -11,10 +11,13 @@
     {"ticker": "EDV.L", "name": "Endeavour Mining PLC", "include_in_breadth": true, "price_unit": "GBp"},
     {"ticker": "NST.AX", "name": "Northern Star Resources Ltd", "include_in_breadth": true, "price_unit": "AUD"},
     {"ticker": "GFI", "name": "Gold Fields ADR", "include_in_breadth": true, "price_unit": "USD"},
-    {"ticker": "PAAS", "name": "Pan American Silver", "include_in_breadth": true, "price_unit": "USD"}
+    {"ticker": "PAAS", "name": "Pan American Silver", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "GDX", "name": "VanEck Gold Miners ETF", "include_in_breadth": false, "price_unit": "USD"},
+    {"ticker": "SPGP.L", "name": "iShares Gold Producers UCITS ETF", "include_in_breadth": false, "price_unit": "GBp"}
   ],
   "reference": [
     {"ticker": "GC=F", "name": "Gold spot (COMEX futures)", "include_in_breadth": false, "role": "gold_confirmation", "price_unit": "USD/oz"},
+    {"ticker": "IGLN.L", "name": "iShares Physical Gold ETC", "include_in_breadth": false, "role": "physical_gold_reference", "price_unit": "USD"},
     {"ticker": "0P00000B0I", "name": "BGF World Gold NAV", "include_in_breadth": false, "role": "fund_nav", "price_unit": "SEK"},
     {"ticker": "0P0001KRE8", "name": "CPR Global Gold Mines NAV", "include_in_breadth": false, "role": "fund_nav", "price_unit": "SEK"}
   ],
