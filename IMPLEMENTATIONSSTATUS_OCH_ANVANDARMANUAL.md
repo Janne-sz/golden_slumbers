@@ -37,14 +37,14 @@ PWA:n visar aktuell status när den öppnas. Appens skal cachas för snabb start
 Guldsektionen ligger överst eftersom den används som bekräftelse i sektorlarmet. Den visar tre olika mått som inte ska blandas ihop:
 
 1. **Sedan peak** – drawdown från bevakningssystemets egen peak; detta är huvudtalet och styr severity.
-2. **Sedan föregående stängning** – förändring mot senaste officiella Yahoo/COMEX-dagsstängning. Detta är samma tal som breadth-regeln använder.
-3. **Senaste timme** – förändring mot föregående hämtade timbar. Det är ett kortsiktigt, brusigt mått och framhävs bara vid rörelser på minst 2 %.
+2. **Sedan stängningen Må dd/mm** – förändring mot Yahoo Finance `previousClose`, med den stängningsdag som används direkt i etiketten. Detta är samma tal som breadth-regeln använder.
+3. **Sedan HH:MM** – tre kortsiktiga förändringar från de senast tillgängliga 1-, 2- och 4-timmarsstaplarna. Klockslagen visas i svensk tid.
 
 Den informativa raden **Sedan ATH** är helt frikopplad från larm. För `GC=F` används 5 589 USD den 28 januari 2026 som konfigurerad historisk referens.
 
 ### Guldgruveaktier
 
-Varje aktiekort använder samma tre mått. **Sedan peak** visas störst, eftersom nivå 1–5 bygger på detta mått. Om ingen ny datapunkt har kommit på 90 minuter eller mer visas `Data från …` i stället för en missvisande timförändring på 0 %.
+Varje aktiekort använder samma mått. **Sedan peak** visas störst, eftersom nivå 1–5 bygger på detta mått. Om ingen ny datapunkt har kommit på 90 minuter eller mer visar kortet när datan senast kom in. Knappen **Uppdatera** laddar om sidan, kontrollerar en ny service-worker-version och hämtar den senaste publicerade statusfilen; den kan inte själv starta Yahoo-hämtningen, som görs av GitHub Actions.
 
 Peak är inte instrumentets all-time-high. Vid första bevakningen initieras den från högsta stängning under de senaste 45 handelsdagarna, och stiger därefter bara när systemet observerar en ny högre kurs. Därför kan systemet upptäcka nästa tydliga nedgång utan att permanent larma för en gammal topp.
 

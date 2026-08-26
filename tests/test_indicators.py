@@ -23,3 +23,11 @@ def test_intraday_changes_use_one_two_and_four_previous_hourly_bars():
 def test_intraday_changes_preserve_actual_reference_time_across_market_gap():
     result = calculate(price_data([bar("2026-08-21T18:30:00Z", 100), bar("2026-08-21T19:30:00Z", 101), bar("2026-08-24T13:30:00Z", 102), bar("2026-08-24T14:30:00Z", 103), bar("2026-08-24T15:30:00Z", 104)]), THRESHOLDS)
     assert result["intraday_changes"]["4h"]["reference_timestamp"] == "2026-08-21T18:30:00Z"
+
+def test_quote_previous_close_overrides_missing_daily_session_and_keeps_its_date():
+    data = price_data([bar("2026-08-25T15:00:00Z", 41.62), bar("2026-08-26T11:00:00Z", 41.39)])
+    data["quote"] = {"previous_close": 41.62, "previous_close_date": "2026-08-25", "as_of_date": "2026-08-26"}
+    result = calculate(data, THRESHOLDS)
+    assert result["previous_close"] == 41.62
+    assert result["previous_close_date"] == "2026-08-25"
+    assert result["daily_change_pct"] == -0.553

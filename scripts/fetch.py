@@ -57,26 +57,42 @@ def _start_for_intraday(price_file: dict[str, Any]) -> str:
     )
     return pd.Timestamp(start).date().isoformat()
 
-def _download(ticker: str, interval: str, start: str) -> list[dict[str, Any]]:
+def _download(ticker: str, interval: str, start: str) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     try:
-        frame = yf.Ticker(ticker).history(start=start, interval=interval, auto_adjust=True, actions=False)
+        yahoo_ticker = yf.Ticker(ticker)
+        frame = yahoo_ticker.history(start=start, interval=interval, auto_adjust=True, actions=False)
     except Exception as error:
         raise RuntimeError(f"yfinance request failed for {ticker} ({interval}): {error}") from error
-    return _rows_from_history(frame, interval)
+    metadata = yahoo_ticker.history_metadata or {}
+    previous_close = next((metadata.get(key) for key in ("regularMarketPreviousClose", "previousClose") if metadata.get(key) is not None), None)
+    return _rows_from_history(frame, interval), {"previous_close": float(previous_close) if previous_close is not None else None}
+
+def _previous_intraday_date(rows: list[dict[str, Any]]) -> str | None:
+    if not rows:
+        return None
+    latest_date = rows[-1]["timestamp"][:10]
+    return next((row["timestamp"][:10] for row in reversed(rows) if row["timestamp"][:10] != latest_date), None)
 
 def update_instrument(instrument: dict[str, Any], state: dict[str, Any]) -> dict[str, Any]:
     ticker = instrument["ticker"]
     file_path = price_path(ticker)
     stored = read_json(file_path, {"ticker": ticker, "daily": [], "intraday": []})
-    daily_new = _download(ticker, "1d", _start_for_daily(stored))
+    daily_new, daily_quote = _download(ticker, "1d", _start_for_daily(stored))
     stored["daily"] = _merge_rows(stored.get("daily", []), daily_new, "date")
     # Persist useful daily data before attempting the less reliable intraday
     # request. A transient Yahoo intraday outage must not blank the dashboard.
     stored["updated_at"] = utc_text()
     write_json(file_path, stored)
 
-    hourly_new = _download(ticker, "1h", _start_for_intraday(stored))
+    hourly_new, hourly_quote = _download(ticker, "1h", _start_for_intraday(stored))
     stored["intraday"] = _merge_rows(stored.get("intraday", []), hourly_new, "timestamp")[-(24 * 45):]
+    quote = hourly_quote if hourly_quote["previous_close"] is not None else daily_quote
+    if quote["previous_close"] is not None:
+        stored["quote"] = {
+            "previous_close": quote["previous_close"],
+            "previous_close_date": _previous_intraday_date(stored["intraday"]),
+            "as_of_date": stored["intraday"][-1]["timestamp"][:10] if stored["intraday"] else (stored["daily"][-1]["date"] if stored["daily"] else None),
+        }
     stored["updated_at"] = utc_text()
     write_json(file_path, stored)
     item_state = state.setdefault("instruments", {}).setdefault(ticker, {})

@@ -14,6 +14,14 @@ function metric(label, value, extraClass = '') {
   return `<div class="metric ${extraClass}"><dt>${label}</dt><dd>${value}</dd></div>`;
 }
 
+function previousCloseLabel(date) {
+  if (!date) return 'Sedan<br>föregående<br>stängning';
+  const weekdays = ['Sö', 'Må', 'Ti', 'On', 'To', 'Fr', 'Lö'];
+  const [year, month, day] = date.slice(0, 10).split('-');
+  const weekday = weekdays[new Date(`${year}-${month}-${day}T12:00:00Z`).getUTCDay()];
+  return `Sedan<br>stängningen<br>${weekday} ${day}/${month}`;
+}
+
 function intradayMetric(change) {
   const label = change?.reference_timestamp ? `Sedan<br>${stockholmTime.format(new Date(change.reference_timestamp))}` : 'Sedan<br>—';
   return metric(label, pct(change?.change_pct), signedClass(change?.change_pct));
@@ -30,7 +38,7 @@ function card(row, target, gold = false) {
     <p class="name">${row.name}</p>
     <p class="price">${i.available ? `${fmt.format(i.last_price)} ${row.price_unit || ''}`.trim() : '—'}</p>
     <dl class="primary">${metric('Sedan peak', i.available ? `−${fmt.format(i.trailing_drawdown_pct)}%` : '—', 'drawdown')}</dl>
-    <dl class="secondary changes">${metric('Sedan<br>föregående<br>stängning', pct(i.daily_change_pct), signedClass(i.daily_change_pct))}${intradayMetric(changes['1h'])}${intradayMetric(changes['2h'])}${intradayMetric(changes['4h'])}</dl>
+    <dl class="secondary changes">${metric(previousCloseLabel(i.previous_close_date), pct(i.daily_change_pct), signedClass(i.daily_change_pct))}${intradayMetric(changes['1h'])}${intradayMetric(changes['2h'])}${intradayMetric(changes['4h'])}</dl>
     ${ath}
     <p class="meta">${row.breadth_floor_applied ? 'Sektorlarm påverkar nivån' : dataTime(i)}</p>`;
   target.append(article);
@@ -54,4 +62,16 @@ async function start() {
   const count = (data.instruments || []).filter(row => row.kind === 'watchlist' && row.severity >= 3).length;
   if ('setAppBadge' in navigator) navigator.setAppBadge(count).catch(() => {});
 }
+async function refreshApp() {
+  const button = document.querySelector('#refresh');
+  button.disabled = true;
+  button.textContent = 'Uppdaterar …';
+  try {
+    const registration = await navigator.serviceWorker?.getRegistration();
+    await registration?.update();
+  } finally {
+    window.location.replace(`${window.location.pathname}?refresh=${Date.now()}`);
+  }
+}
+document.querySelector('#refresh').addEventListener('click', refreshApp);
 start().catch(error => { document.querySelector('#updated').textContent = `Status ej tillgänglig: ${error.message}`; });
