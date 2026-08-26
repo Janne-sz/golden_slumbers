@@ -65,7 +65,7 @@
       },
       {
         "daily_rows": 760,
-        "intraday_rows": 159,
+        "intraday_rows": 160,
         "ticker": "NST.AX"
       },
       {
@@ -80,12 +80,12 @@
       },
       {
         "daily_rows": 754,
-        "intraday_rows": 514,
+        "intraday_rows": 515,
         "ticker": "GC=F"
       }
     ]
   },
-  "generated_at": "2026-08-26T04:58:43Z",
+  "generated_at": "2026-08-26T05:52:47Z",
   "instruments": [
     {
       "base_severity": 0,
@@ -524,12 +524,12 @@
       "breadth_floor_applied": false,
       "include_in_breadth": true,
       "indicators": {
-        "as_of": "2026-08-26T04:00:00Z",
+        "as_of": "2026-08-26T05:00:00Z",
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": -2.18,
+        "daily_change_pct": -2.037,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 760,
@@ -538,26 +538,26 @@
         "intraday_changes": {
           "1h": {
             "change_pct": -0.021,
-            "reference_timestamp": "2026-08-26T03:00:00Z"
+            "reference_timestamp": "2026-08-26T04:00:00Z"
           },
           "2h": {
-            "change_pct": -1.316,
-            "reference_timestamp": "2026-08-26T02:00:00Z"
+            "change_pct": 0.125,
+            "reference_timestamp": "2026-08-26T03:00:00Z"
           },
           "4h": {
-            "change_pct": -1.619,
-            "reference_timestamp": "2026-08-26T00:00:00Z"
+            "change_pct": -0.784,
+            "reference_timestamp": "2026-08-26T01:00:00Z"
           }
         },
-        "last_price": 24.005,
+        "last_price": 24.04,
         "moving_averages": {
-          "100": 21.195,
-          "200": 23.5233,
-          "50": 21.1725
+          "100": 21.1953,
+          "200": 23.5235,
+          "50": 21.1732
         },
         "new_swing_low": false,
         "previous_close": 24.54,
-        "trailing_drawdown_pct": 2.18,
+        "trailing_drawdown_pct": 2.037,
         "trailing_peak_price": 24.54
       },
       "kind": "watchlist",
@@ -670,43 +670,43 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-08-26T04:00:00Z",
+        "as_of": "2026-08-26T05:00:00Z",
         "ath_date": "2026-01-28",
-        "ath_drawdown_pct": 15.967,
+        "ath_drawdown_pct": 15.904,
         "ath_price": 5589,
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 1.261,
+        "daily_change_pct": 1.337,
         "data_is_stale": false,
         "down_streak_days": 1,
         "history_days": 754,
-        "hourly_change_pct": -0.181,
+        "hourly_change_pct": 0.053,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.181,
-            "reference_timestamp": "2026-08-26T03:00:00Z"
+            "change_pct": 0.053,
+            "reference_timestamp": "2026-08-26T04:00:00Z"
           },
           "2h": {
-            "change_pct": -0.418,
-            "reference_timestamp": "2026-08-26T02:00:00Z"
+            "change_pct": -0.106,
+            "reference_timestamp": "2026-08-26T03:00:00Z"
           },
           "4h": {
-            "change_pct": 0.051,
-            "reference_timestamp": "2026-08-26T00:00:00Z"
+            "change_pct": -0.242,
+            "reference_timestamp": "2026-08-26T01:00:00Z"
           }
         },
-        "last_price": 4696.6001,
+        "last_price": 4700.1001,
         "moving_averages": {
-          "100": 4392.041,
-          "200": 4509.008,
-          "50": 4202.788
+          "100": 4392.076,
+          "200": 4509.0255,
+          "50": 4202.858
         },
         "new_swing_low": false,
         "previous_close": 4638.1001,
-        "trailing_drawdown_pct": 0.639,
+        "trailing_drawdown_pct": 0.565,
         "trailing_peak_price": 4726.7998
       },
       "kind": "reference",
