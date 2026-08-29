@@ -1,14 +1,14 @@
 {
   "breadth": {
     "active": true,
-    "confirmed_by_gold": true,
+    "confirmed_by_gold": false,
     "count": 3,
     "declining_tickers": [
       "AU",
       "AEM",
       "GFI"
     ],
-    "floor_level": 5
+    "floor_level": 4
   },
   "fetch": {
     "errors": [
@@ -104,7 +104,7 @@
       }
     ]
   },
-  "generated_at": "2026-08-29T02:15:47Z",
+  "generated_at": "2026-08-29T09:10:19Z",
   "instruments": [
     {
       "base_severity": 1,
@@ -154,7 +154,7 @@
       "reasons": [
         "drawdown_level_1"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "GOLD"
     },
     {
@@ -205,7 +205,7 @@
       "reasons": [
         "drawdown_level_2"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "NEM"
     },
     {
@@ -256,7 +256,7 @@
       "reasons": [
         "drawdown_or_confluence_level_3"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "AU"
     },
     {
@@ -307,7 +307,7 @@
       "reasons": [
         "drawdown_or_confluence_level_3"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "WPM"
     },
     {
@@ -356,7 +356,7 @@
       "name": "Franco-Nevada Corp",
       "price_unit": "USD",
       "reasons": [],
-      "severity": 5,
+      "severity": 4,
       "ticker": "FNV"
     },
     {
@@ -407,7 +407,7 @@
       "reasons": [
         "drawdown_or_confluence_level_3"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "KGC"
     },
     {
@@ -458,7 +458,7 @@
       "reasons": [
         "drawdown_or_confluence_level_3"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "AEM"
     },
     {
@@ -509,7 +509,7 @@
       "reasons": [
         "drawdown_level_2"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "AGI"
     },
     {
@@ -560,7 +560,7 @@
       "reasons": [
         "drawdown_level_1"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "EDV.L"
     },
     {
@@ -609,7 +609,7 @@
       "name": "Northern Star Resources Ltd",
       "price_unit": "AUD",
       "reasons": [],
-      "severity": 5,
+      "severity": 4,
       "ticker": "NST.AX"
     },
     {
@@ -660,7 +660,7 @@
       "reasons": [
         "drawdown_level_2"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "GFI"
     },
     {
@@ -711,7 +711,7 @@
       "reasons": [
         "drawdown_level_1"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "PAAS"
     },
     {
@@ -762,7 +762,7 @@
       "reasons": [
         "drawdown_level_2"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "GDX"
     },
     {
@@ -811,7 +811,7 @@
       "name": "iShares Gold Producers UCITS ETF",
       "price_unit": "EUR",
       "reasons": [],
-      "severity": 5,
+      "severity": 4,
       "ticker": "IS0E.DE"
     },
     {
@@ -821,33 +821,33 @@
       "indicators": {
         "as_of": "2026-08-28T20:00:00Z",
         "ath_date": "2026-01-28",
-        "ath_drawdown_pct": 19.411,
+        "ath_drawdown_pct": 18.95,
         "ath_price": 5589,
         "available": true,
         "below_ma100": false,
-        "below_ma200": true,
+        "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": -3.428,
+        "daily_change_pct": -2.875,
         "data_is_stale": true,
         "down_streak_days": 0,
         "history_days": 756,
-        "hourly_change_pct": -0.084,
+        "hourly_change_pct": 0.488,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.084,
+            "change_pct": 0.488,
             "reference_timestamp": "2026-08-28T19:00:00Z"
           },
           "2h": {
-            "change_pct": -0.053,
+            "change_pct": 0.519,
             "reference_timestamp": "2026-08-28T18:00:00Z"
           },
           "4h": {
-            "change_pct": -0.57,
+            "change_pct": 0.0,
             "reference_timestamp": "2026-08-28T16:00:00Z"
           }
         },
-        "last_price": 4504.1001,
+        "last_price": 4529.8999,
         "moving_averages": {
           "100": 4389.056,
           "200": 4513.529,
@@ -856,7 +856,7 @@
         "new_swing_low": false,
         "previous_close": 4664.0,
         "previous_close_date": "2026-08-27",
-        "trailing_drawdown_pct": 4.711,
+        "trailing_drawdown_pct": 4.166,
         "trailing_peak_price": 4726.7998
       },
       "kind": "reference",
@@ -866,7 +866,7 @@
         "drawdown_level_2"
       ],
       "role": "gold_confirmation",
-      "severity": 5,
+      "severity": 4,
       "ticker": "GC=F"
     },
     {
@@ -916,7 +916,7 @@
       "price_unit": "EUR",
       "reasons": [],
       "role": "physical_gold_reference",
-      "severity": 5,
+      "severity": 4,
       "ticker": "PPFB.DE"
     },
     {
@@ -953,7 +953,7 @@
       "price_unit": "SEK",
       "reasons": [],
       "role": "fund_nav",
-      "severity": 5,
+      "severity": 4,
       "ticker": "0P00000B0I"
     },
     {
@@ -992,7 +992,7 @@
         "drawdown_level_1"
       ],
       "role": "fund_nav",
-      "severity": 5,
+      "severity": 4,
       "ticker": "0P0001KRE8"
     }
   ],
