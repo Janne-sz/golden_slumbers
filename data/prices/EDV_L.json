@@ -6091,10 +6091,10 @@
     {
       "close": 4484.0,
       "date": "2026-09-01",
-      "high": 4584.0,
-      "low": 4325.0,
-      "open": 4486.0,
-      "volume": 734502
+      "high": 0.0,
+      "low": 0.0,
+      "open": 0.0,
+      "volume": 70
     }
   ],
   "intraday": [
@@ -7977,5 +7977,5 @@
     "previous_close_date": "2026-08-28"
   },
   "ticker": "EDV.L",
-  "updated_at": "2026-09-01T21:50:10Z"
+  "updated_at": "2026-09-02T00:18:59Z"
 }
