@@ -61,13 +61,13 @@
         "ticker": "AGI"
       },
       {
-        "daily_rows": 764,
-        "intraday_rows": 252,
+        "daily_rows": 765,
+        "intraday_rows": 257,
         "ticker": "EDV.L"
       },
       {
         "daily_rows": 767,
-        "intraday_rows": 209,
+        "intraday_rows": 210,
         "ticker": "NST.AX"
       },
       {
@@ -86,23 +86,23 @@
         "ticker": "GDX"
       },
       {
-        "daily_rows": 766,
-        "intraday_rows": 261,
+        "daily_rows": 767,
+        "intraday_rows": 266,
         "ticker": "IS0E.DE"
       },
       {
         "daily_rows": 762,
-        "intraday_rows": 677,
+        "intraday_rows": 683,
         "ticker": "GC=F"
       },
       {
-        "daily_rows": 765,
-        "intraday_rows": 261,
+        "daily_rows": 766,
+        "intraday_rows": 266,
         "ticker": "PPFB.DE"
       }
     ]
   },
-  "generated_at": "2026-09-04T05:58:45Z",
+  "generated_at": "2026-09-04T11:25:38Z",
   "instruments": [
     {
       "base_severity": 4,
@@ -188,9 +188,9 @@
         },
         "last_price": 130.44,
         "moving_averages": {
-          "100": 107.6129,
-          "200": 108.0438,
-          "50": 106.4966
+          "100": 107.5997,
+          "200": 108.0372,
+          "50": 106.4703
         },
         "new_swing_low": false,
         "previous_close": 124.9,
@@ -512,54 +512,52 @@
       "ticker": "AGI"
     },
     {
-      "base_severity": 1,
+      "base_severity": 0,
       "breadth_floor_applied": false,
       "include_in_breadth": true,
       "indicators": {
-        "as_of": "2026-09-03T15:00:00Z",
+        "as_of": "2026-09-04T11:00:00Z",
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 3.764,
-        "data_is_stale": true,
+        "daily_change_pct": 1.036,
+        "data_is_stale": false,
         "down_streak_days": 0,
-        "history_days": 764,
-        "hourly_change_pct": 0.36,
+        "history_days": 765,
+        "hourly_change_pct": -0.25,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": 0.36,
-            "reference_timestamp": "2026-09-03T14:00:00Z"
+            "change_pct": -0.25,
+            "reference_timestamp": "2026-09-04T10:00:00Z"
           },
           "2h": {
-            "change_pct": 1.217,
-            "reference_timestamp": "2026-09-03T13:00:00Z"
+            "change_pct": -0.044,
+            "reference_timestamp": "2026-09-04T09:00:00Z"
           },
           "4h": {
-            "change_pct": 1.836,
-            "reference_timestamp": "2026-09-03T11:00:00Z"
+            "change_pct": 0.105,
+            "reference_timestamp": "2026-09-04T07:00:00Z"
           }
         },
-        "last_price": 4741.0,
+        "last_price": 4781.0,
         "moving_averages": {
-          "100": 4178.84,
-          "200": 4176.7134,
-          "50": 3959.64
+          "100": 4177.45,
+          "200": 4184.7813,
+          "50": 3980.4
         },
         "new_swing_low": false,
-        "previous_close": 4569.0,
-        "previous_close_date": "2026-09-02",
-        "trailing_drawdown_pct": 2.489,
+        "previous_close": 4732.0,
+        "previous_close_date": "2026-09-03",
+        "trailing_drawdown_pct": 1.666,
         "trailing_peak_price": 4862.0
       },
       "kind": "watchlist",
       "name": "Endeavour Mining PLC",
       "price_unit": "GBp",
-      "reasons": [
-        "drawdown_level_1"
-      ],
-      "severity": 1,
+      "reasons": [],
+      "severity": 0,
       "ticker": "EDV.L"
     },
     {
@@ -567,29 +565,29 @@
       "breadth_floor_applied": false,
       "include_in_breadth": true,
       "indicators": {
-        "as_of": "2026-09-04T05:00:00Z",
+        "as_of": "2026-09-04T06:00:00Z",
         "available": true,
         "below_ma100": false,
         "below_ma200": true,
         "below_ma50": false,
         "daily_change_pct": 0.0,
-        "data_is_stale": false,
+        "data_is_stale": true,
         "down_streak_days": 0,
         "history_days": 767,
-        "hourly_change_pct": 0.238,
+        "hourly_change_pct": -0.086,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
+            "change_pct": -0.086,
+            "reference_timestamp": "2026-09-04T05:00:00Z"
+          },
+          "2h": {
             "change_pct": 0.238,
             "reference_timestamp": "2026-09-04T04:00:00Z"
           },
-          "2h": {
-            "change_pct": 0.477,
-            "reference_timestamp": "2026-09-04T03:00:00Z"
-          },
           "4h": {
-            "change_pct": -0.172,
-            "reference_timestamp": "2026-09-04T01:00:00Z"
+            "change_pct": 0.13,
+            "reference_timestamp": "2026-09-04T02:00:00Z"
           }
         },
         "last_price": 23.17,
@@ -769,41 +767,41 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-09-03T15:00:00Z",
+        "as_of": "2026-09-04T11:00:00Z",
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 4.107,
-        "data_is_stale": true,
+        "daily_change_pct": -0.235,
+        "data_is_stale": false,
         "down_streak_days": 0,
-        "history_days": 766,
-        "hourly_change_pct": 0.535,
+        "history_days": 767,
+        "hourly_change_pct": -0.161,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": 0.535,
-            "reference_timestamp": "2026-09-03T14:00:00Z"
+            "change_pct": -0.161,
+            "reference_timestamp": "2026-09-04T10:00:00Z"
           },
           "2h": {
-            "change_pct": 1.698,
-            "reference_timestamp": "2026-09-03T13:00:00Z"
+            "change_pct": 0.025,
+            "reference_timestamp": "2026-09-04T09:00:00Z"
           },
           "4h": {
-            "change_pct": 2.341,
-            "reference_timestamp": "2026-09-03T11:00:00Z"
+            "change_pct": -0.383,
+            "reference_timestamp": "2026-09-04T07:00:00Z"
           }
         },
-        "last_price": 40.435,
+        "last_price": 40.285,
         "moving_averages": {
-          "100": 34.1974,
-          "200": 35.4146,
-          "50": 33.7736
+          "100": 34.216,
+          "200": 35.4657,
+          "50": 33.949
         },
         "new_swing_low": false,
-        "previous_close": 38.84,
-        "previous_close_date": "2026-09-02",
-        "trailing_drawdown_pct": 2.331,
+        "previous_close": 40.38,
+        "previous_close_date": "2026-09-03",
+        "trailing_drawdown_pct": 2.693,
         "trailing_peak_price": 41.4
       },
       "kind": "watchlist",
@@ -820,44 +818,44 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-09-04T05:00:00Z",
+        "as_of": "2026-09-04T11:00:00Z",
         "ath_date": "2026-01-28",
-        "ath_drawdown_pct": 19.155,
+        "ath_drawdown_pct": 19.193,
         "ath_price": 5589,
         "available": true,
         "below_ma100": false,
         "below_ma200": true,
         "below_ma50": false,
-        "daily_change_pct": -0.474,
+        "daily_change_pct": -0.52,
         "data_is_stale": false,
         "down_streak_days": 0,
         "history_days": 762,
-        "hourly_change_pct": -0.044,
+        "hourly_change_pct": -0.058,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.044,
-            "reference_timestamp": "2026-09-04T04:00:00Z"
+            "change_pct": -0.058,
+            "reference_timestamp": "2026-09-04T10:00:00Z"
           },
           "2h": {
-            "change_pct": 0.071,
-            "reference_timestamp": "2026-09-04T03:00:00Z"
+            "change_pct": 0.1,
+            "reference_timestamp": "2026-09-04T09:00:00Z"
           },
           "4h": {
-            "change_pct": -0.15,
-            "reference_timestamp": "2026-09-04T01:00:00Z"
+            "change_pct": -0.309,
+            "reference_timestamp": "2026-09-04T07:00:00Z"
           }
         },
-        "last_price": 4518.3999,
+        "last_price": 4516.2998,
         "moving_averages": {
-          "100": 4369.112,
-          "200": 4523.3355,
-          "50": 4250.124
+          "100": 4368.732,
+          "200": 4523.1455,
+          "50": 4249.364
         },
         "new_swing_low": false,
         "previous_close": 4539.9,
         "previous_close_date": "2026-09-03",
-        "trailing_drawdown_pct": 4.409,
+        "trailing_drawdown_pct": 4.453,
         "trailing_peak_price": 4726.7998
       },
       "kind": "reference",
@@ -875,41 +873,41 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-09-03T15:00:00Z",
+        "as_of": "2026-09-04T11:00:00Z",
         "available": true,
         "below_ma100": false,
         "below_ma200": true,
         "below_ma50": false,
-        "daily_change_pct": 2.748,
-        "data_is_stale": true,
+        "daily_change_pct": -0.679,
+        "data_is_stale": false,
         "down_streak_days": 0,
-        "history_days": 765,
-        "hourly_change_pct": 0.394,
+        "history_days": 766,
+        "hourly_change_pct": -0.047,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": 0.394,
-            "reference_timestamp": "2026-09-03T14:00:00Z"
+            "change_pct": -0.047,
+            "reference_timestamp": "2026-09-04T10:00:00Z"
           },
           "2h": {
-            "change_pct": 0.757,
-            "reference_timestamp": "2026-09-03T13:00:00Z"
+            "change_pct": 0.034,
+            "reference_timestamp": "2026-09-04T09:00:00Z"
           },
           "4h": {
-            "change_pct": 1.239,
-            "reference_timestamp": "2026-09-03T11:00:00Z"
+            "change_pct": -0.301,
+            "reference_timestamp": "2026-09-04T07:00:00Z"
           }
         },
-        "last_price": 75.155,
+        "last_price": 74.63,
         "moving_averages": {
-          "100": 73.1702,
-          "200": 75.3531,
-          "50": 71.4385
+          "100": 73.1252,
+          "200": 75.3855,
+          "50": 71.5414
         },
         "new_swing_low": false,
-        "previous_close": 73.145,
-        "previous_close_date": "2026-09-02",
-        "trailing_drawdown_pct": 3.263,
+        "previous_close": 75.14,
+        "previous_close_date": "2026-09-03",
+        "trailing_drawdown_pct": 3.939,
         "trailing_peak_price": 77.69
       },
       "kind": "reference",
@@ -1001,9 +999,7 @@
       "ticker": "0P0001KRE8"
     }
   ],
-  "notifications_sent": [
-    "NST.AX"
-  ],
+  "notifications_sent": [],
   "schema_version": 1,
   "status": "degraded"
 }
