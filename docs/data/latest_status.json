@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-09-04T22:23:52Z",
+  "generated_at": "2026-09-05T01:02:37Z",
   "instruments": [
     {
       "base_severity": 0,
@@ -924,28 +924,28 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-09-03",
+        "as_of": "2026-09-04",
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 1.867,
+        "daily_change_pct": -0.489,
         "data_is_stale": true,
         "down_streak_days": 0,
-        "history_days": 698,
+        "history_days": 699,
         "hourly_change_pct": null,
         "hourly_move_highlight": false,
         "intraday_changes": {},
-        "last_price": 114.6,
+        "last_price": 114.04,
         "moving_averages": {
-          "100": 100.6477,
-          "200": 102.4876,
-          "50": 96.926
+          "100": 100.6466,
+          "200": 102.6654,
+          "50": 97.4192
         },
         "new_swing_low": false,
-        "previous_close": 112.5,
-        "previous_close_date": "2026-09-02",
-        "trailing_drawdown_pct": 4.722,
+        "previous_close": 114.6,
+        "previous_close_date": "2026-09-03",
+        "trailing_drawdown_pct": 5.188,
         "trailing_peak_price": 120.28
       },
       "kind": "reference",
@@ -959,42 +959,42 @@
       "ticker": "0P00000B0I"
     },
     {
-      "base_severity": 3,
+      "base_severity": 2,
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-09-02",
+        "as_of": "2026-09-03",
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": 2.685,
+        "daily_change_pct": 3.827,
         "data_is_stale": true,
-        "down_streak_days": 3,
-        "history_days": 689,
+        "down_streak_days": 0,
+        "history_days": 690,
         "hourly_change_pct": null,
         "hourly_move_highlight": false,
         "intraday_changes": {},
-        "last_price": 249.31,
+        "last_price": 258.85,
         "moving_averages": {
-          "100": 221.8728,
-          "200": 224.9491,
-          "50": 215.685
+          "100": 222.3573,
+          "200": 225.3456,
+          "50": 216.5244
         },
         "new_swing_low": false,
-        "previous_close": 242.79,
-        "previous_close_date": "2026-09-01",
-        "trailing_drawdown_pct": 8.17,
+        "previous_close": 249.31,
+        "previous_close_date": "2026-09-02",
+        "trailing_drawdown_pct": 4.656,
         "trailing_peak_price": 271.49
       },
       "kind": "reference",
       "name": "CPR Global Gold Mines NAV",
       "price_unit": "SEK",
       "reasons": [
-        "drawdown_or_confluence_level_3"
+        "drawdown_level_2"
       ],
       "role": "fund_nav",
-      "severity": 3,
+      "severity": 2,
       "ticker": "0P0001KRE8"
     }
   ],
