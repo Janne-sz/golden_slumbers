@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-09-05T01:02:37Z",
+  "generated_at": "2026-09-05T05:49:41Z",
   "instruments": [
     {
       "base_severity": 0,
@@ -847,9 +847,9 @@
         },
         "last_price": 4477.2002,
         "moving_averages": {
-          "100": 4368.341,
-          "200": 4522.95,
-          "50": 4248.582
+          "100": 4367.867,
+          "200": 4522.713,
+          "50": 4247.634
         },
         "new_swing_low": false,
         "previous_close": 4539.9,
