@@ -25,7 +25,7 @@ def _intraday_changes(intraday: list[dict[str, Any]], price: float) -> dict[str,
     return changes
 
 def calculate(
-    price_data: dict[str, Any], thresholds: dict[str, Any], saved_peak: float | None = None
+    price_data: dict[str, Any], thresholds: dict[str, Any], saved_peak: float | None = None, saved_peak_date: str | None = None
 ) -> dict[str, Any]:
     daily, intraday = price_data.get("daily", []), price_data.get("intraday", [])
     price, latest_bar = _latest_price(daily, intraday)
@@ -46,7 +46,17 @@ def calculate(
     # not an historical all-time high that would leave it permanently alarmed.
     bootstrap_closes = closes[-thresholds["peak_backfill_lookback_days"]:]
     peak = float(saved_peak) if saved_peak is not None else max(bootstrap_closes)
-    peak = max(peak, price)
+    if price > peak:
+        peak = price
+        peak_date = latest_date
+    else:
+        peak_date = saved_peak_date
+        # If no saved date yet, find the daily bar whose close is closest to (but
+        # not exceeding) the peak – handles peaks set from intraday data.
+        if peak_date is None:
+            best_row = max(daily, key=lambda r: float(r["close"]), default=None)
+            if best_row is not None:
+                peak_date = best_row["date"]
     drawdown = ((peak - price) / peak) * 100
     intraday_changes = _intraday_changes(intraday, price)
     hourly_change = intraday_changes.get("1h", {}).get("change_pct")
@@ -56,4 +66,5 @@ def calculate(
     for index in range(len(completed_closes) - 1, 0, -1):
         if completed_closes[index] < completed_closes[index - 1]: streak += 1
         else: break
-    return {"available": True, "as_of": latest_bar.get("timestamp", latest_bar.get("date")), "last_price": round(price, 4), "previous_close": round(previous_close, 4) if previous_close else None, "previous_close_date": previous_close_date, "daily_change_pct": round(daily_change, 3) if daily_change is not None else None, "intraday_changes": intraday_changes, "hourly_change_pct": hourly_change, "hourly_move_highlight": hourly_change is not None and abs(hourly_change) >= thresholds["hourly_move_highlight_threshold_pct"], "trailing_peak_price": round(peak, 4), "trailing_drawdown_pct": round(drawdown, 3), "moving_averages": {key: round(value, 4) if value is not None else None for key, value in moving_averages.items()}, "below_ma50": moving_averages.get("50") is not None and price < moving_averages["50"], "below_ma100": moving_averages.get("100") is not None and price < moving_averages["100"], "below_ma200": moving_averages.get("200") is not None and price < moving_averages["200"], "new_swing_low": bool(prior_lows) and latest_low < min(prior_lows), "down_streak_days": streak, "history_days": len(daily)}
+    return {"available": True, "as_of": latest_bar.get("timestamp", latest_bar.get("date")), "last_price": round(price, 4), "previous_close": round(previous_close, 4) if previous_close else None, "previous_close_date": previous_close_date, "daily_change_pct": round(daily_change, 3) if daily_change is not None else None, "intraday_changes": intraday_changes, "hourly_change_pct": hourly_change, "hourly_move_highlight": hourly_change is not None and abs(hourly_change) >= thresholds["hourly_move_highlight_threshold_pct"], "trailing_peak_price": round(peak, 4), "trailing_peak_date": peak_date, "trailing_drawdown_pct": round(drawdown, 3), "moving_averages": {key: round(value, 4) if value is not None else None for key, value in moving_averages.items()}, "below_ma50": moving_averages.get("50") is not None and price < moving_averages["50"], "below_ma100": moving_averages.get("100") is not None and price < moving_averages["100"], "below_ma200": moving_averages.get("200") is not None and price < moving_averages["200"], "new_swing_low": bool(prior_lows) and latest_low < min(prior_lows), "down_streak_days": streak, "history_days": len(daily)}
+

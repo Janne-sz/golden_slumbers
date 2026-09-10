@@ -28,9 +28,11 @@ def run(send_notifications: bool = True) -> dict:
             read_json(price_path(instrument["ticker"]), {}),
             thresholds,
             instrument_state.get("trailing_peak_price"),
+            instrument_state.get("trailing_peak_date"),
         )
         if indicators.get("available"):
             instrument_state["trailing_peak_price"] = indicators["trailing_peak_price"]
+            instrument_state["trailing_peak_date"] = indicators.get("trailing_peak_date")
             instrument_state["peak_initialized_at"] = instrument_state.get("peak_initialized_at", utc_text())
             instrument_state["last_data_timestamp"] = indicators["as_of"]
             indicators["data_is_stale"] = _is_stale(indicators["as_of"], thresholds["stale_data_threshold_minutes"])

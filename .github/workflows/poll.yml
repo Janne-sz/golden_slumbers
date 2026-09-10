@@ -2,6 +2,8 @@ name: Poll gold equities
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
   schedule:
     - cron: '17 * * * *'
 
@@ -44,3 +46,56 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  watchdog:
+    runs-on: ubuntu-latest
+    # Runs once a day at 20:17 UTC (22:17 CET) to check that the hourly cron is alive
+    if: github.event_name == 'schedule' && startsWith(github.event.schedule, '17 20')
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check staleness and alert via ntfy
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          python - <<'EOF'
+          import json, os, sys
+          from datetime import datetime, timezone, timedelta
+
+          path = "docs/data/latest_status.json"
+          try:
+              with open(path) as f:
+                  status = json.load(f)
+              generated_at = status.get("generated_at")
+              if not generated_at:
+                  raise ValueError("generated_at missing")
+              ts = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
+              age_hours = (datetime.now(timezone.utc) - ts).total_seconds() / 3600
+              print(f"Data age: {age_hours:.1f}h (generated_at={generated_at})")
+              # Only alert on weekdays (Mon=0 .. Fri=4)
+              weekday = datetime.now(timezone.utc).weekday()
+              if weekday >= 5:
+                  print("Weekend – skipping watchdog alert.")
+                  sys.exit(0)
+              if age_hours < 3:
+                  print("Data is fresh – no alert needed.")
+                  sys.exit(0)
+              # Data is stale on a weekday – send ntfy alert
+              topic = os.environ.get("NTFY_TOPIC")
+              if not topic:
+                  print("NTFY_TOPIC not set – cannot send alert.")
+                  sys.exit(1)
+              import urllib.request
+              age_text = f"{age_hours:.0f} timmar"
+              msg = f"Guldbevakare: datainsamlingen har inte körts på {age_text}. Senast: {generated_at[:16].replace('T',' ')} UTC"
+              req = urllib.request.Request(
+                  f"https://ntfy.sh/{topic}",
+                  data=msg.encode(),
+                  headers={"Title": "Guldbevakare: datainsamling nere", "Priority": "default", "Tags": "warning"},
+                  method="POST",
+              )
+              urllib.request.urlopen(req, timeout=15)
+              print(f"Watchdog alert sent: {msg}")
+          except Exception as e:
+              print(f"Watchdog error: {e}", file=sys.stderr)
+              sys.exit(1)
+          EOF

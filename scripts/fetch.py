@@ -65,6 +65,13 @@ def _download(ticker: str, interval: str, start: str) -> tuple[list[dict[str, An
         raise RuntimeError(f"yfinance request failed for {ticker} ({interval}): {error}") from error
     metadata = yahoo_ticker.history_metadata or {}
     previous_close = next((metadata.get(key) for key in ("regularMarketPreviousClose", "previousClose") if metadata.get(key) is not None), None)
+    if previous_close is None:
+        try:
+            fi_val = getattr(yahoo_ticker.fast_info, "previous_close", None)
+            if fi_val is not None:
+                previous_close = float(fi_val)
+        except Exception:
+            pass
     return _rows_from_history(frame, interval), {"previous_close": float(previous_close) if previous_close is not None else None}
 
 def _previous_intraday_date(rows: list[dict[str, Any]]) -> str | None:

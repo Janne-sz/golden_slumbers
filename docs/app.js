@@ -22,6 +22,12 @@ function previousCloseLabel(date) {
   return `Sedan<br>stängningen<br>${weekday} ${day}/${month}`;
 }
 
+function peakLabel(date) {
+  if (!date) return 'Sedan<br>peak';
+  const [year, month, day] = date.slice(0, 10).split('-');
+  return `Sedan<br>peak<br>${day}/${month}`;
+}
+
 function intradayMetric(change) {
   const label = change?.reference_timestamp ? `Sedan<br>${stockholmTime.format(new Date(change.reference_timestamp))}` : 'Sedan<br>—';
   return metric(label, pct(change?.change_pct), signedClass(change?.change_pct));
@@ -37,11 +43,45 @@ function card(row, target, gold = false) {
     <div class="card-title"><span class="dot"></span><strong>${row.ticker}</strong><span class="level">${i.available ? (row.severity ? `Nivå ${row.severity}` : 'Ingen varning') : 'Data saknas'}</span></div>
     <p class="name">${row.name}</p>
     <p class="price">${i.available ? `${fmt.format(i.last_price)} ${row.price_unit || ''}`.trim() : '—'}</p>
-    <dl class="primary">${metric('Sedan peak', i.available ? `−${fmt.format(i.trailing_drawdown_pct)}%` : '—', 'drawdown')}</dl>
+    <dl class="primary">${metric(peakLabel(i.trailing_peak_date), i.available ? `−${fmt.format(i.trailing_drawdown_pct)}%` : '—', 'drawdown')}</dl>
     <dl class="secondary changes">${metric(previousCloseLabel(i.previous_close_date), pct(i.daily_change_pct), signedClass(i.daily_change_pct))}${intradayMetric(changes['1h'])}${intradayMetric(changes['2h'])}${intradayMetric(changes['4h'])}</dl>
     ${ath}
     <p class="meta">${row.breadth_floor_applied ? 'Sektorlarm påverkar nivån' : dataTime(i)}</p>`;
   target.append(article);
+}
+
+function checkStaleness(generatedAt) {
+  if (!generatedAt) return;
+  const generated = new Date(generatedAt);
+  const now = new Date();
+  const ageMs = now - generated;
+  const ageHours = ageMs / (1000 * 60 * 60);
+  if (ageHours < 3) return;
+
+  // Only warn on weekdays between 09:00–22:00 CET/CEST
+  const cetHour = parseInt(
+    new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Stockholm', hour: '2-digit', hourCycle: 'h23' }).format(now),
+    10
+  );
+  const cetWeekday = parseInt(
+    new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Stockholm', weekday: 'short' }).format(now) === 'Sat' ? '6' :
+    new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Stockholm', weekday: 'short' }).format(now) === 'Sun' ? '0' : '1',
+    10
+  );
+  // Reliable weekday check: 0=Sun,6=Sat in JS Date using Stockholm time
+  const stockholmDate = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Stockholm' }));
+  const weekday = stockholmDate.getDay(); // 0=Sun, 6=Sat
+  const isWeekend = weekday === 0 || weekday === 6;
+  if (isWeekend) return;
+  if (cetHour < 9 || cetHour >= 22) return;
+
+  // Show the banner
+  const banner = document.querySelector('#stale-warning');
+  const timeEl = document.querySelector('#stale-warning-time');
+  if (banner && timeEl) {
+    timeEl.textContent = stockholmDateTime.format(generated);
+    banner.hidden = false;
+  }
 }
 
 async function start() {
@@ -49,6 +89,7 @@ async function start() {
   if (!response.ok) throw Error('Statusfilen kunde inte hämtas');
   const data = await response.json();
   document.querySelector('#updated').textContent = data.generated_at ? `Senast beräknad ${stockholmDateTime.format(new Date(data.generated_at))}` : 'Väntar på första datainsamlingen';
+  checkStaleness(data.generated_at);
   const breadth = document.querySelector('#breadth');
   if (data.breadth?.active) {
     breadth.hidden = false;
