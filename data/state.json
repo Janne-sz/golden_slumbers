@@ -22,7 +22,7 @@
       "trailing_peak_price": 271.49
     },
     "AEM": {
-      "last_checked_at": "2026-09-10T07:14:15Z",
+      "last_checked_at": "2026-09-10T07:20:03Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -32,7 +32,7 @@
       "trailing_peak_price": 224.04
     },
     "AGI": {
-      "last_checked_at": "2026-09-10T07:14:16Z",
+      "last_checked_at": "2026-09-10T07:20:03Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -42,7 +42,7 @@
       "trailing_peak_price": 39.03
     },
     "AU": {
-      "last_checked_at": "2026-09-10T07:14:11Z",
+      "last_checked_at": "2026-09-10T07:20:01Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -52,17 +52,17 @@
       "trailing_peak_price": 123.31
     },
     "EDV.L": {
-      "last_checked_at": "2026-09-10T07:14:18Z",
-      "last_daily_timestamp": "2026-09-09",
-      "last_data_timestamp": "2026-09-09T15:00:00Z",
-      "last_intraday_timestamp": "2026-09-09T15:00:00Z",
+      "last_checked_at": "2026-09-10T07:20:03Z",
+      "last_daily_timestamp": "2026-09-10",
+      "last_data_timestamp": "2026-09-10T07:00:00Z",
+      "last_intraday_timestamp": "2026-09-10T07:00:00Z",
       "peak_initialized_at": "2026-08-25T19:48:42Z",
-      "previous_base_severity": 1,
+      "previous_base_severity": 2,
       "trailing_peak_date": "2026-02-27",
       "trailing_peak_price": 4862.0
     },
     "FNV": {
-      "last_checked_at": "2026-09-10T07:14:13Z",
+      "last_checked_at": "2026-09-10T07:20:02Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -72,7 +72,7 @@
       "trailing_peak_price": 271.52
     },
     "GC=F": {
-      "last_checked_at": "2026-09-10T07:14:24Z",
+      "last_checked_at": "2026-09-10T07:20:04Z",
       "last_daily_timestamp": "2026-09-10",
       "last_data_timestamp": "2026-09-10T07:00:00Z",
       "last_intraday_timestamp": "2026-09-10T07:00:00Z",
@@ -82,7 +82,7 @@
       "trailing_peak_price": 4726.7998
     },
     "GDX": {
-      "last_checked_at": "2026-09-10T07:14:22Z",
+      "last_checked_at": "2026-09-10T07:20:04Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -92,7 +92,7 @@
       "trailing_peak_price": 105.54
     },
     "GFI": {
-      "last_checked_at": "2026-09-10T07:14:20Z",
+      "last_checked_at": "2026-09-10T07:20:03Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -102,7 +102,7 @@
       "trailing_peak_price": 48.86
     },
     "GOLD": {
-      "last_checked_at": "2026-09-10T07:14:09Z",
+      "last_checked_at": "2026-09-10T07:20:00Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -121,17 +121,17 @@
       "trailing_peak_price": 90.6475
     },
     "IS0E.DE": {
-      "last_checked_at": "2026-09-10T07:14:23Z",
-      "last_daily_timestamp": "2026-09-09",
-      "last_data_timestamp": "2026-09-09T15:00:00Z",
-      "last_intraday_timestamp": "2026-09-09T15:00:00Z",
+      "last_checked_at": "2026-09-10T07:20:04Z",
+      "last_daily_timestamp": "2026-09-10",
+      "last_data_timestamp": "2026-09-10T07:00:00Z",
+      "last_intraday_timestamp": "2026-09-10T07:00:00Z",
       "peak_initialized_at": "2026-08-26T11:46:21Z",
-      "previous_base_severity": 2,
+      "previous_base_severity": 1,
       "trailing_peak_date": "2026-02-27",
       "trailing_peak_price": 41.4
     },
     "KGC": {
-      "last_checked_at": "2026-09-10T07:14:14Z",
+      "last_checked_at": "2026-09-10T07:20:02Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -141,7 +141,7 @@
       "trailing_peak_price": 33.46
     },
     "NEM": {
-      "last_checked_at": "2026-09-10T07:14:10Z",
+      "last_checked_at": "2026-09-10T07:20:01Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -151,7 +151,7 @@
       "trailing_peak_price": 135.135
     },
     "NST.AX": {
-      "last_checked_at": "2026-09-10T07:14:19Z",
+      "last_checked_at": "2026-09-10T07:20:03Z",
       "last_daily_timestamp": "2026-09-10",
       "last_data_timestamp": "2026-09-10T06:00:00Z",
       "last_intraday_timestamp": "2026-09-10T06:00:00Z",
@@ -161,7 +161,7 @@
       "trailing_peak_price": 24.78
     },
     "PAAS": {
-      "last_checked_at": "2026-09-10T07:14:21Z",
+      "last_checked_at": "2026-09-10T07:20:04Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -171,10 +171,10 @@
       "trailing_peak_price": 54.915
     },
     "PPFB.DE": {
-      "last_checked_at": "2026-09-10T07:14:25Z",
-      "last_daily_timestamp": "2026-09-09",
-      "last_data_timestamp": "2026-09-09T15:00:00Z",
-      "last_intraday_timestamp": "2026-09-09T15:00:00Z",
+      "last_checked_at": "2026-09-10T07:20:04Z",
+      "last_daily_timestamp": "2026-09-10",
+      "last_data_timestamp": "2026-09-10T07:00:00Z",
+      "last_intraday_timestamp": "2026-09-10T07:00:00Z",
       "peak_initialized_at": "2026-08-26T11:46:21Z",
       "previous_base_severity": 2,
       "trailing_peak_date": "2026-03-02",
@@ -190,7 +190,7 @@
       "trailing_peak_price": 3551.978
     },
     "WPM": {
-      "last_checked_at": "2026-09-10T07:14:12Z",
+      "last_checked_at": "2026-09-10T07:20:02Z",
       "last_daily_timestamp": "2026-09-09",
       "last_data_timestamp": "2026-09-09T19:30:00Z",
       "last_intraday_timestamp": "2026-09-09T19:30:00Z",
@@ -200,6 +200,6 @@
       "trailing_peak_price": 163.71
     }
   },
-  "last_run_at": "2026-09-10T07:14:29Z",
+  "last_run_at": "2026-09-10T07:20:05Z",
   "schema_version": 1
 }
