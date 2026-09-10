@@ -1,6 +1,6 @@
 {
   "watchlist": [
-    {"ticker": "GOLD", "name": "Barrick Mining Corp", "include_in_breadth": true, "price_unit": "USD"},
+    {"ticker": "B", "name": "Barrick Mining Corp", "include_in_breadth": true, "price_unit": "USD"},
     {"ticker": "NEM", "name": "Newmont Corporation", "include_in_breadth": true, "price_unit": "USD"},
     {"ticker": "AU", "name": "AngloGold Ashanti PLC", "include_in_breadth": true, "price_unit": "USD"},
     {"ticker": "WPM", "name": "Wheaton Precious Metals Corp", "include_in_breadth": true, "price_unit": "USD"},
