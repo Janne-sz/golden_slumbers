@@ -6174,7 +6174,15 @@
       "high": 4559.0,
       "low": 4416.0,
       "open": 4504.0,
-      "volume": 967512
+      "volume": 967516
+    },
+    {
+      "close": 4584.0,
+      "date": "2026-09-16",
+      "high": 4590.0,
+      "low": 4514.0,
+      "open": 4570.0,
+      "volume": 145182
     }
   ],
   "intraday": [
@@ -8769,13 +8777,53 @@
       "open": 4427.0,
       "timestamp": "2026-09-15T15:00:00Z",
       "volume": 35357
+    },
+    {
+      "close": 4550.0,
+      "high": 4578.0,
+      "low": 4527.14892578125,
+      "open": 4570.0,
+      "timestamp": "2026-09-16T07:00:00Z",
+      "volume": 89835
+    },
+    {
+      "close": 4521.0,
+      "high": 4548.0,
+      "low": 4514.0,
+      "open": 4546.0,
+      "timestamp": "2026-09-16T08:00:00Z",
+      "volume": 18212
+    },
+    {
+      "close": 4552.0,
+      "high": 4553.0,
+      "low": 4516.0,
+      "open": 4521.01611328125,
+      "timestamp": "2026-09-16T09:00:00Z",
+      "volume": 11133
+    },
+    {
+      "close": 4587.0,
+      "high": 4590.0,
+      "low": 4554.0,
+      "open": 4556.0,
+      "timestamp": "2026-09-16T10:00:00Z",
+      "volume": 11242
+    },
+    {
+      "close": 4584.0,
+      "high": 4590.0,
+      "low": 4575.0,
+      "open": 4587.0,
+      "timestamp": "2026-09-16T11:00:00Z",
+      "volume": 6153
     }
   ],
   "quote": {
-    "as_of_date": "2026-09-15",
-    "previous_close": 4492.0,
-    "previous_close_date": "2026-09-14"
+    "as_of_date": "2026-09-16",
+    "previous_close": 4441.0,
+    "previous_close_date": "2026-09-15"
   },
   "ticker": "EDV.L",
-  "updated_at": "2026-09-16T06:06:49Z"
+  "updated_at": "2026-09-16T11:44:35Z"
 }
