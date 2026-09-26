@@ -6246,7 +6246,7 @@
       "high": 73.375,
       "low": 72.37999725341797,
       "open": 72.8499984741211,
-      "volume": 90727
+      "volume": 90836
     }
   ],
   "intraday": [
@@ -9497,5 +9497,5 @@
     "previous_close_date": "2026-09-24"
   },
   "ticker": "PPFB.DE",
-  "updated_at": "2026-09-26T19:56:18Z"
+  "updated_at": "2026-09-26T22:56:08Z"
 }
