@@ -6238,7 +6238,7 @@
       "high": 4351.60009765625,
       "low": 4289.2001953125,
       "open": 4309.5,
-      "volume": 164814
+      "volume": 140092
     },
     {
       "close": 4272.89990234375,
@@ -14933,9 +14933,9 @@
   ],
   "quote": {
     "as_of_date": "2026-10-02",
-    "previous_close": 4202.3,
+    "previous_close": 4162.3,
     "previous_close_date": "2026-10-01"
   },
   "ticker": "GC=F",
-  "updated_at": "2026-10-04T17:40:20Z"
+  "updated_at": "2026-10-04T21:34:53Z"
 }
