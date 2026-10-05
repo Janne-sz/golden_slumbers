@@ -6279,6 +6279,14 @@
       "low": 4200.0,
       "open": 4212.0,
       "volume": 489183
+    },
+    {
+      "close": 4250.0,
+      "date": "2026-10-05",
+      "high": 4322.0,
+      "low": 4187.0,
+      "open": 4280.0,
+      "volume": 355658
     }
   ],
   "intraday": [
@@ -9809,13 +9817,85 @@
       "open": 4292.0,
       "timestamp": "2026-10-02T15:00:00Z",
       "volume": 36647
+    },
+    {
+      "close": 4282.0,
+      "high": 4317.0,
+      "low": 4247.0,
+      "open": 4280.0,
+      "timestamp": "2026-10-05T07:00:00Z",
+      "volume": 0
+    },
+    {
+      "close": 4297.0,
+      "high": 4322.0,
+      "low": 4273.0,
+      "open": 4277.0,
+      "timestamp": "2026-10-05T08:00:00Z",
+      "volume": 9208
+    },
+    {
+      "close": 4279.0,
+      "high": 4302.0,
+      "low": 4275.0,
+      "open": 4297.0,
+      "timestamp": "2026-10-05T09:00:00Z",
+      "volume": 4778
+    },
+    {
+      "close": 4289.0,
+      "high": 4294.0,
+      "low": 4261.0,
+      "open": 4277.0,
+      "timestamp": "2026-10-05T10:00:00Z",
+      "volume": 8407
+    },
+    {
+      "close": 4280.0,
+      "high": 4311.0,
+      "low": 4278.0,
+      "open": 4288.0,
+      "timestamp": "2026-10-05T11:00:00Z",
+      "volume": 8483
+    },
+    {
+      "close": 4283.0,
+      "high": 4308.0,
+      "low": 4278.0,
+      "open": 4283.0,
+      "timestamp": "2026-10-05T12:00:00Z",
+      "volume": 13456
+    },
+    {
+      "close": 4226.0,
+      "high": 4294.0,
+      "low": 4207.0,
+      "open": 4285.0,
+      "timestamp": "2026-10-05T13:00:00Z",
+      "volume": 37742
+    },
+    {
+      "close": 4247.0,
+      "high": 4258.0,
+      "low": 4187.0,
+      "open": 4224.0,
+      "timestamp": "2026-10-05T14:00:00Z",
+      "volume": 47013
+    },
+    {
+      "close": 4241.0,
+      "high": 4245.0,
+      "low": 4219.0,
+      "open": 4244.0,
+      "timestamp": "2026-10-05T15:00:00Z",
+      "volume": 26001
     }
   ],
   "quote": {
-    "as_of_date": "2026-10-02",
-    "previous_close": 4244.0,
-    "previous_close_date": "2026-10-01"
+    "as_of_date": "2026-10-05",
+    "previous_close": 4250.0,
+    "previous_close_date": "2026-10-02"
   },
   "ticker": "EDV.L",
-  "updated_at": "2026-10-05T07:09:10Z"
+  "updated_at": "2026-10-05T16:07:52Z"
 }
