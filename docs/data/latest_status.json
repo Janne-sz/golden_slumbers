@@ -64,8 +64,8 @@
         "ticker": "EDV.L"
       },
       {
-        "daily_rows": 794,
-        "intraday_rows": 399,
+        "daily_rows": 795,
+        "intraday_rows": 402,
         "ticker": "NST.AX"
       },
       {
@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-10-13T22:51:12Z",
+  "generated_at": "2026-10-14T01:57:42Z",
   "instruments": [
     {
       "base_severity": 4,
@@ -575,53 +575,55 @@
       "ticker": "EDV.L"
     },
     {
-      "base_severity": 0,
+      "base_severity": 1,
       "breadth_floor_applied": false,
       "include_in_breadth": true,
       "indicators": {
-        "as_of": "2026-10-13T05:00:00Z",
+        "as_of": "2026-10-14T01:00:00Z",
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": -0.08,
-        "data_is_stale": true,
-        "down_streak_days": 0,
-        "history_days": 794,
-        "hourly_change_pct": -0.399,
+        "daily_change_pct": -0.721,
+        "data_is_stale": false,
+        "down_streak_days": 1,
+        "history_days": 795,
+        "hourly_change_pct": -0.342,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.399,
-            "reference_timestamp": "2026-10-13T04:00:00Z"
+            "change_pct": -0.342,
+            "reference_timestamp": "2026-10-14T00:00:00Z"
           },
           "2h": {
-            "change_pct": 0.201,
-            "reference_timestamp": "2026-10-13T03:00:00Z"
+            "change_pct": -0.76,
+            "reference_timestamp": "2026-10-13T23:00:00Z"
           },
           "4h": {
-            "change_pct": 1.216,
-            "reference_timestamp": "2026-10-13T01:00:00Z"
+            "change_pct": -1.116,
+            "reference_timestamp": "2026-10-13T04:00:00Z"
           }
         },
-        "last_price": 24.98,
+        "last_price": 24.8,
         "moving_averages": {
-          "100": 21.6498,
-          "200": 23.0046,
-          "50": 23.1792
+          "100": 21.701,
+          "200": 22.996,
+          "50": 23.2454
         },
         "new_swing_low": false,
-        "previous_close": 25.0,
-        "previous_close_date": "2026-10-12",
-        "trailing_drawdown_pct": 1.537,
+        "previous_close": 24.98,
+        "previous_close_date": "2026-10-13",
+        "trailing_drawdown_pct": 2.247,
         "trailing_peak_date": "2026-10-12",
         "trailing_peak_price": 25.37
       },
       "kind": "watchlist",
       "name": "Northern Star Resources Ltd",
       "price_unit": "AUD",
-      "reasons": [],
-      "severity": 0,
+      "reasons": [
+        "drawdown_level_1"
+      ],
+      "severity": 1,
       "ticker": "NST.AX"
     },
     {
@@ -839,44 +841,44 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-10-13T22:00:00Z",
+        "as_of": "2026-10-14T01:00:00Z",
         "ath_date": "2026-01-28",
-        "ath_drawdown_pct": 25.169,
+        "ath_drawdown_pct": 25.403,
         "ath_price": 5589,
         "available": true,
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": 0.12,
+        "daily_change_pct": -0.194,
         "data_is_stale": false,
-        "down_streak_days": 1,
+        "down_streak_days": 2,
         "history_days": 795,
-        "hourly_change_pct": -0.045,
+        "hourly_change_pct": -0.206,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.045,
-            "reference_timestamp": "2026-10-13T21:00:00Z"
+            "change_pct": -0.206,
+            "reference_timestamp": "2026-10-14T00:00:00Z"
           },
           "2h": {
-            "change_pct": -0.038,
-            "reference_timestamp": "2026-10-13T20:00:00Z"
+            "change_pct": -0.213,
+            "reference_timestamp": "2026-10-13T23:00:00Z"
           },
           "4h": {
-            "change_pct": -0.1,
-            "reference_timestamp": "2026-10-13T18:00:00Z"
+            "change_pct": -0.358,
+            "reference_timestamp": "2026-10-13T21:00:00Z"
           }
         },
-        "last_price": 4182.2998,
+        "last_price": 4169.2002,
         "moving_averages": {
-          "100": 4261.53,
-          "200": 4525.2505,
-          "50": 4363.922
+          "100": 4261.399,
+          "200": 4525.185,
+          "50": 4363.66
         },
         "new_swing_low": false,
         "previous_close": 4177.3,
-        "previous_close_date": "2026-10-12",
-        "trailing_drawdown_pct": 11.519,
+        "previous_close_date": "2026-10-13",
+        "trailing_drawdown_pct": 11.797,
         "trailing_peak_date": "2026-01-29",
         "trailing_peak_price": 4726.7998
       },
@@ -957,7 +959,7 @@
         "daily_change_pct": 0.392,
         "data_is_stale": true,
         "down_streak_days": 2,
-        "history_days": 722,
+        "history_days": 723,
         "hourly_change_pct": 0.392,
         "hourly_move_highlight": false,
         "intraday_changes": {
@@ -976,9 +978,9 @@
         },
         "last_price": 115.35,
         "moving_averages": {
-          "100": 99.8949,
-          "200": 104.8868,
-          "50": 106.3148
+          "100": 99.7864,
+          "200": 104.9263,
+          "50": 106.608
         },
         "new_swing_low": false,
         "previous_close": 114.9,
