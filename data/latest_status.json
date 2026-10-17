@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-10-16T21:18:24Z",
+  "generated_at": "2026-10-17T00:32:44Z",
   "instruments": [
     {
       "base_severity": 3,
@@ -846,14 +846,14 @@
         "below_ma200": true,
         "below_ma50": true,
         "daily_change_pct": 0.398,
-        "data_is_stale": false,
+        "data_is_stale": true,
         "down_streak_days": 0,
         "history_days": 798,
-        "hourly_change_pct": -0.074,
+        "hourly_change_pct": -0.076,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.074,
+            "change_pct": -0.076,
             "reference_timestamp": "2026-10-16T19:00:00Z"
           },
           "2h": {
@@ -954,8 +954,8 @@
         "below_ma50": false,
         "daily_change_pct": 0.392,
         "data_is_stale": true,
-        "down_streak_days": 4,
-        "history_days": 725,
+        "down_streak_days": 0,
+        "history_days": 726,
         "hourly_change_pct": 0.392,
         "hourly_move_highlight": false,
         "intraday_changes": {
@@ -974,9 +974,9 @@
         },
         "last_price": 115.35,
         "moving_averages": {
-          "100": 99.6951,
-          "200": 104.9396,
-          "50": 107.0598
+          "100": 99.7386,
+          "200": 104.9717,
+          "50": 107.3856
         },
         "new_swing_low": false,
         "previous_close": 114.9,
@@ -1007,8 +1007,8 @@
         "below_ma50": false,
         "daily_change_pct": -1.553,
         "data_is_stale": true,
-        "down_streak_days": 2,
-        "history_days": 714,
+        "down_streak_days": 0,
+        "history_days": 715,
         "hourly_change_pct": -1.553,
         "hourly_move_highlight": false,
         "intraday_changes": {
@@ -1027,9 +1027,9 @@
         },
         "last_price": 254.83,
         "moving_averages": {
-          "100": 221.8024,
-          "200": 231.4002,
-          "50": 236.3946
+          "100": 221.6821,
+          "200": 231.4863,
+          "50": 237.0384
         },
         "new_swing_low": false,
         "previous_close": 258.85,
