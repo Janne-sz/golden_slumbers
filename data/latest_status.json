@@ -89,7 +89,7 @@
         "ticker": "IS0E.DE"
       },
       {
-        "daily_rows": 798,
+        "daily_rows": 799,
         "intraday_rows": 1080,
         "ticker": "GC=F"
       },
@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-10-18T20:51:37Z",
+  "generated_at": "2026-10-18T23:19:37Z",
   "instruments": [
     {
       "base_severity": 3,
@@ -837,44 +837,44 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-10-16T20:00:00Z",
+        "as_of": "2026-10-18T23:00:00Z",
         "ath_date": "2026-01-28",
-        "ath_drawdown_pct": 25.191,
+        "ath_drawdown_pct": 24.867,
         "ath_price": 5589,
         "available": true,
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": 0.0,
-        "data_is_stale": true,
+        "daily_change_pct": 0.433,
+        "data_is_stale": false,
         "down_streak_days": 0,
-        "history_days": 798,
-        "hourly_change_pct": -0.21,
+        "history_days": 799,
+        "hourly_change_pct": 0.062,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.21,
-            "reference_timestamp": "2026-10-16T19:00:00Z"
+            "change_pct": 0.062,
+            "reference_timestamp": "2026-10-18T22:00:00Z"
           },
           "2h": {
-            "change_pct": 0.01,
-            "reference_timestamp": "2026-10-16T18:00:00Z"
+            "change_pct": 0.299,
+            "reference_timestamp": "2026-10-16T20:00:00Z"
           },
           "4h": {
-            "change_pct": -0.026,
-            "reference_timestamp": "2026-10-16T16:00:00Z"
+            "change_pct": 0.443,
+            "reference_timestamp": "2026-10-16T18:00:00Z"
           }
         },
-        "last_price": 4181.1001,
+        "last_price": 4199.2002,
         "moving_averages": {
-          "100": 4253.575,
-          "200": 4519.7995,
-          "50": 4349.72
+          "100": 4252.208,
+          "200": 4517.8495,
+          "50": 4343.916
         },
         "new_swing_low": false,
         "previous_close": 4181.1,
-        "previous_close_date": "2026-10-15",
-        "trailing_drawdown_pct": 11.545,
+        "previous_close_date": "2026-10-16",
+        "trailing_drawdown_pct": 11.162,
         "trailing_peak_date": "2026-01-29",
         "trailing_peak_price": 4726.7998
       },
