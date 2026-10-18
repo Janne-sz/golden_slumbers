@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-10-18T18:11:13Z",
+  "generated_at": "2026-10-18T20:51:37Z",
   "instruments": [
     {
       "base_severity": 3,
@@ -845,7 +845,7 @@
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": 0.264,
+        "daily_change_pct": 0.0,
         "data_is_stale": true,
         "down_streak_days": 0,
         "history_days": 798,
@@ -872,7 +872,7 @@
           "50": 4349.72
         },
         "new_swing_low": false,
-        "previous_close": 4170.1,
+        "previous_close": 4181.1,
         "previous_close_date": "2026-10-15",
         "trailing_drawdown_pct": 11.545,
         "trailing_peak_date": "2026-01-29",
