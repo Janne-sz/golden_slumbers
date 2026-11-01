@@ -1,7 +1,7 @@
 {
   "breadth": {
     "active": true,
-    "confirmed_by_gold": true,
+    "confirmed_by_gold": false,
     "count": 10,
     "declining_tickers": [
       "B",
@@ -15,7 +15,7 @@
       "GFI",
       "PAAS"
     ],
-    "floor_level": 5
+    "floor_level": 4
   },
   "fetch": {
     "errors": [
@@ -111,7 +111,7 @@
       }
     ]
   },
-  "generated_at": "2026-11-01T17:09:46Z",
+  "generated_at": "2026-11-01T21:14:13Z",
   "instruments": [
     {
       "base_severity": 5,
@@ -216,7 +216,7 @@
         "drawdown_or_confluence_level_3",
         "ma100_escalator"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "NEM"
     },
     {
@@ -375,7 +375,7 @@
         "drawdown_or_confluence_level_3",
         "ma100_escalator"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "FNV"
     },
     {
@@ -481,7 +481,7 @@
         "drawdown_or_confluence_level_3",
         "ma100_escalator"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "AEM"
     },
     {
@@ -637,7 +637,7 @@
       "name": "Northern Star Resources Ltd",
       "price_unit": "AUD",
       "reasons": [],
-      "severity": 5,
+      "severity": 4,
       "ticker": "NST.AX"
     },
     {
@@ -865,7 +865,7 @@
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": -3.287,
+        "daily_change_pct": -0.0,
         "data_is_stale": true,
         "down_streak_days": 2,
         "history_days": 810,
@@ -892,7 +892,7 @@
           "50": 4241.04
         },
         "new_swing_low": true,
-        "previous_close": 4031.4,
+        "previous_close": 3898.9,
         "previous_close_date": "2026-10-29",
         "trailing_drawdown_pct": 17.515,
         "trailing_peak_date": "2026-01-29",
@@ -1013,7 +1013,7 @@
         "drawdown_level_2"
       ],
       "role": "fund_nav",
-      "severity": 5,
+      "severity": 4,
       "ticker": "0P00000B0I"
     },
     {
@@ -1066,7 +1066,7 @@
         "drawdown_or_confluence_level_3"
       ],
       "role": "fund_nav",
-      "severity": 5,
+      "severity": 4,
       "ticker": "0P0001KRE8"
     }
   ],
