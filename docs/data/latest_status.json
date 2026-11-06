@@ -65,7 +65,7 @@
       },
       {
         "daily_rows": 812,
-        "intraday_rows": 520,
+        "intraday_rows": 525,
         "ticker": "NST.AX"
       },
       {
@@ -89,7 +89,7 @@
         "ticker": "IS0E.DE"
       },
       {
-        "daily_rows": 815,
+        "daily_rows": 816,
         "intraday_rows": 1080,
         "ticker": "GC=F"
       },
@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-11-06T00:22:53Z",
+  "generated_at": "2026-11-06T07:58:42Z",
   "instruments": [
     {
       "base_severity": 3,
@@ -575,55 +575,53 @@
       "ticker": "EDV.L"
     },
     {
-      "base_severity": 1,
+      "base_severity": 0,
       "breadth_floor_applied": false,
       "include_in_breadth": true,
       "indicators": {
-        "as_of": "2026-11-06T00:00:00Z",
+        "as_of": "2026-11-06T05:00:00Z",
         "available": true,
         "below_ma100": false,
         "below_ma200": false,
         "below_ma50": false,
-        "daily_change_pct": -2.467,
-        "data_is_stale": false,
+        "daily_change_pct": -1.118,
+        "data_is_stale": true,
         "down_streak_days": 0,
         "history_days": 812,
-        "hourly_change_pct": 0.556,
+        "hourly_change_pct": 0.431,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": 0.556,
-            "reference_timestamp": "2026-11-05T23:00:00Z"
+            "change_pct": 0.431,
+            "reference_timestamp": "2026-11-06T04:00:00Z"
           },
           "2h": {
-            "change_pct": -2.467,
-            "reference_timestamp": "2026-11-05T05:00:00Z"
+            "change_pct": 1.243,
+            "reference_timestamp": "2026-11-06T03:00:00Z"
           },
           "4h": {
-            "change_pct": -1.709,
-            "reference_timestamp": "2026-11-05T03:00:00Z"
+            "change_pct": 1.343,
+            "reference_timestamp": "2026-11-06T01:00:00Z"
           }
         },
-        "last_price": 25.3,
+        "last_price": 25.65,
         "moving_averages": {
-          "100": 22.5259,
-          "200": 22.889,
-          "50": 23.7424
+          "100": 22.5294,
+          "200": 22.8908,
+          "50": 23.7494
         },
         "new_swing_low": false,
         "previous_close": 25.94,
         "previous_close_date": "2026-11-05",
-        "trailing_drawdown_pct": 2.467,
+        "trailing_drawdown_pct": 1.118,
         "trailing_peak_date": "2026-11-05",
         "trailing_peak_price": 25.94
       },
       "kind": "watchlist",
       "name": "Northern Star Resources Ltd",
       "price_unit": "AUD",
-      "reasons": [
-        "drawdown_level_1"
-      ],
-      "severity": 1,
+      "reasons": [],
+      "severity": 0,
       "ticker": "NST.AX"
     },
     {
@@ -742,27 +740,27 @@
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": 1.359,
+        "daily_change_pct": 1.348,
         "data_is_stale": true,
         "down_streak_days": 0,
         "history_days": 802,
-        "hourly_change_pct": 0.375,
+        "hourly_change_pct": 0.363,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": 0.375,
+            "change_pct": 0.363,
             "reference_timestamp": "2026-11-05T19:30:00Z"
           },
           "2h": {
-            "change_pct": 0.61,
+            "change_pct": 0.598,
             "reference_timestamp": "2026-11-05T18:30:00Z"
           },
           "4h": {
-            "change_pct": 0.522,
+            "change_pct": 0.51,
             "reference_timestamp": "2026-11-05T16:30:00Z"
           }
         },
-        "last_price": 85.74,
+        "last_price": 85.73,
         "moving_averages": {
           "100": 85.8381,
           "200": 90.2553,
@@ -771,7 +769,7 @@
         "new_swing_low": false,
         "previous_close": 84.59,
         "previous_close_date": "2026-11-04",
-        "trailing_drawdown_pct": 18.761,
+        "trailing_drawdown_pct": 18.77,
         "trailing_peak_date": "2026-02-27",
         "trailing_peak_price": 105.54
       },
@@ -842,44 +840,44 @@
       "breadth_floor_applied": false,
       "include_in_breadth": false,
       "indicators": {
-        "as_of": "2026-11-06T00:00:00Z",
+        "as_of": "2026-11-06T07:00:00Z",
         "ath_date": "2026-01-28",
-        "ath_drawdown_pct": 26.511,
+        "ath_drawdown_pct": 27.443,
         "ath_price": 5589,
         "available": true,
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": -0.151,
+        "daily_change_pct": -1.417,
         "data_is_stale": false,
         "down_streak_days": 0,
-        "history_days": 815,
-        "hourly_change_pct": 0.291,
+        "history_days": 816,
+        "hourly_change_pct": -0.084,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": 0.291,
-            "reference_timestamp": "2026-11-05T23:00:00Z"
+            "change_pct": -0.084,
+            "reference_timestamp": "2026-11-06T06:00:00Z"
           },
           "2h": {
-            "change_pct": 0.229,
-            "reference_timestamp": "2026-11-05T21:00:00Z"
+            "change_pct": 0.111,
+            "reference_timestamp": "2026-11-06T05:00:00Z"
           },
           "4h": {
-            "change_pct": -0.415,
-            "reference_timestamp": "2026-11-05T19:00:00Z"
+            "change_pct": -0.393,
+            "reference_timestamp": "2026-11-06T02:00:00Z"
           }
         },
-        "last_price": 4107.2998,
+        "last_price": 4055.2,
         "moving_averages": {
-          "100": 4233.942,
-          "200": 4450.373,
-          "50": 4195.05
+          "100": 4233.429,
+          "200": 4445.924,
+          "50": 4187.064
         },
         "new_swing_low": false,
         "previous_close": 4113.5,
         "previous_close_date": "2026-11-05",
-        "trailing_drawdown_pct": 13.106,
+        "trailing_drawdown_pct": 14.208,
         "trailing_peak_date": "2026-01-29",
         "trailing_peak_price": 4726.7998
       },
