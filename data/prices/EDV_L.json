@@ -6518,7 +6518,7 @@
       "high": 3825.0,
       "low": 3696.0,
       "open": 3777.0,
-      "volume": 686508
+      "volume": 686518
     }
   ],
   "intraday": [
@@ -12217,5 +12217,5 @@
     "previous_close_date": "2026-11-12"
   },
   "ticker": "EDV.L",
-  "updated_at": "2026-11-14T06:37:28Z"
+  "updated_at": "2026-11-14T14:14:41Z"
 }
