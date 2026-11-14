@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-11-13T23:38:46Z",
+  "generated_at": "2026-11-14T06:37:30Z",
   "instruments": [
     {
       "base_severity": 5,
@@ -874,9 +874,9 @@
         },
         "last_price": 3887.6001,
         "moving_averages": {
-          "100": 4228.136,
-          "200": 4416.518,
-          "50": 4143.112
+          "100": 4228.123,
+          "200": 4416.5115,
+          "50": 4143.086
         },
         "new_swing_low": false,
         "previous_close": 3885.3,
@@ -1057,9 +1057,7 @@
       "ticker": "0P0001KRE8"
     }
   ],
-  "notifications_sent": [
-    "FNV"
-  ],
+  "notifications_sent": [],
   "schema_version": 1,
   "status": "degraded"
 }
