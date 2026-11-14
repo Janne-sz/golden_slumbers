@@ -12203,12 +12203,12 @@
       "volume": 62466
     },
     {
-      "close": 3791.0,
+      "close": 3790.0,
       "high": 3802.0,
       "low": 3774.0,
       "open": 3793.0,
       "timestamp": "2026-11-13T16:00:00Z",
-      "volume": 25306
+      "volume": 25473
     }
   ],
   "quote": {
@@ -12217,5 +12217,5 @@
     "previous_close_date": "2026-11-12"
   },
   "ticker": "EDV.L",
-  "updated_at": "2026-11-14T14:14:41Z"
+  "updated_at": "2026-11-14T19:15:16Z"
 }

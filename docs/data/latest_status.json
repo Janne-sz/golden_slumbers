@@ -100,7 +100,7 @@
       }
     ]
   },
-  "generated_at": "2026-11-14T14:14:44Z",
+  "generated_at": "2026-11-14T19:15:19Z",
   "instruments": [
     {
       "base_severity": 5,
@@ -532,27 +532,27 @@
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": 0.344,
+        "daily_change_pct": 0.318,
         "data_is_stale": true,
         "down_streak_days": 1,
         "history_days": 815,
-        "hourly_change_pct": -0.053,
+        "hourly_change_pct": -0.079,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": -0.053,
+            "change_pct": -0.079,
             "reference_timestamp": "2026-11-13T15:00:00Z"
           },
           "2h": {
-            "change_pct": -0.184,
+            "change_pct": -0.211,
             "reference_timestamp": "2026-11-13T14:00:00Z"
           },
           "4h": {
-            "change_pct": 1.147,
+            "change_pct": 1.121,
             "reference_timestamp": "2026-11-13T12:00:00Z"
           }
         },
-        "last_price": 3791.0,
+        "last_price": 3790.0,
         "moving_averages": {
           "100": 4095.4422,
           "200": 4283.114,
@@ -561,7 +561,7 @@
         "new_swing_low": false,
         "previous_close": 3778.0,
         "previous_close_date": "2026-11-12",
-        "trailing_drawdown_pct": 22.028,
+        "trailing_drawdown_pct": 22.049,
         "trailing_peak_date": "2026-02-27",
         "trailing_peak_price": 4862.0
       },
@@ -856,15 +856,15 @@
         "data_is_stale": true,
         "down_streak_days": 4,
         "history_days": 822,
-        "hourly_change_pct": 0.124,
+        "hourly_change_pct": 0.116,
         "hourly_move_highlight": false,
         "intraday_changes": {
           "1h": {
-            "change_pct": 0.124,
+            "change_pct": 0.116,
             "reference_timestamp": "2026-11-13T20:00:00Z"
           },
           "2h": {
-            "change_pct": 0.199,
+            "change_pct": 0.201,
             "reference_timestamp": "2026-11-13T19:00:00Z"
           },
           "4h": {
