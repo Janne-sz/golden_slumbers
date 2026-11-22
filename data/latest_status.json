@@ -1,7 +1,7 @@
 {
   "breadth": {
     "active": true,
-    "confirmed_by_gold": true,
+    "confirmed_by_gold": false,
     "count": 9,
     "declining_tickers": [
       "B",
@@ -14,7 +14,7 @@
       "EDV.L",
       "PAAS"
     ],
-    "floor_level": 5
+    "floor_level": 4
   },
   "fetch": {
     "errors": [
@@ -110,7 +110,7 @@
       }
     ]
   },
-  "generated_at": "2026-11-22T16:20:52Z",
+  "generated_at": "2026-11-22T22:29:57Z",
   "instruments": [
     {
       "base_severity": 5,
@@ -374,7 +374,7 @@
         "drawdown_or_confluence_level_3",
         "ma100_escalator"
       ],
-      "severity": 5,
+      "severity": 4,
       "ticker": "FNV"
     },
     {
@@ -867,7 +867,7 @@
         "below_ma100": true,
         "below_ma200": true,
         "below_ma50": true,
-        "daily_change_pct": -4.615,
+        "daily_change_pct": -0.0,
         "data_is_stale": true,
         "down_streak_days": 2,
         "history_days": 828,
@@ -894,7 +894,7 @@
           "50": 4067.746
         },
         "new_swing_low": true,
-        "previous_close": 3685.5,
+        "previous_close": 3515.4,
         "previous_close_date": "2026-11-19",
         "trailing_drawdown_pct": 25.628,
         "trailing_peak_date": "2026-01-29",
@@ -1015,7 +1015,7 @@
         "drawdown_level_2"
       ],
       "role": "fund_nav",
-      "severity": 5,
+      "severity": 4,
       "ticker": "0P00000B0I"
     },
     {
@@ -1068,7 +1068,7 @@
         "drawdown_or_confluence_level_3"
       ],
       "role": "fund_nav",
-      "severity": 5,
+      "severity": 4,
       "ticker": "0P0001KRE8"
     }
   ],
